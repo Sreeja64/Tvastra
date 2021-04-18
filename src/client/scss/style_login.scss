@@ -1,0 +1,403 @@
+body{
+    background-color: var(--lightblue);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    nav
+    {
+        background-color: var(--white);
+    }
+    main
+    {
+        padding: 1rem;
+        display: flex;
+        justify-content: center;
+        .login_container
+        {
+            padding: 0;
+            width: 100%;
+            background-color: var(--white);
+            box-shadow: 1px 1px 4px grey;
+            .heading{
+                padding: 2rem;
+                display: flex;
+                justify-content: center;
+                border-bottom: 1px solid var(--grey);
+                h3{
+                    color:var(--blue);
+                }
+            }
+            .formcontainer
+            {
+                padding: 1rem;
+                .loginform, .signupform, .submitquery, .appointmentform
+                {    
+                    input{
+                        width: 100%;
+                        border: 1px solid var(--grey);
+                        margin-bottom: 0.5rem;
+                        padding-top: 1rem;
+                        padding-bottom: 1rem;
+                        color: var(--black);
+                        font-family: "nexa-bold";
+                    }
+                    ::placeholder{
+                        color: var(--medgrey);
+                        font-family: "nexa-bold";
+                    }
+                    .primarybutton{
+                        position: relative;
+                        padding-top: 0.85rem;
+                        padding-bottom: 0.85rem;
+                        letter-spacing: 0.35rem;
+                        font-weight: 600;
+                    }
+                    .primarybutton::after{
+                        content: '\f061';
+                        position: absolute;
+                        top: 0.8rem;
+                        right: 1rem;
+                        font-family: "fontawesome";
+                        color: var(--white);
+                    }
+                    .mobileno_input{
+                        position: relative;
+                        i{
+                            font-size: 1.2rem;
+                            color:var(--grey);
+                            position: absolute;
+                            top: 0.85rem;
+                            right: 1rem;
+                        }
+                        input{
+                            padding-right: 2.4rem;
+                        }
+                    }
+                }
+                .signupform
+                {
+                    .location_input{
+                        display: flex;
+                        justify-content: space-between;
+                        input:not(:last-child){
+                            margin-right: 1rem;
+                        }
+                    }
+                    select,input{
+                        width: 100%;
+                        border: 1px solid var(--lightgrey);
+                        margin-bottom: 0.5rem;
+                        padding-top: 0.6rem;
+                        padding-bottom: 0.6rem;
+                        color: var(--black);
+                        font-family: "nexa-bold";
+                    }
+                    .grey{
+                        color: var(--grey);
+                    }
+                    ::placeholder{
+                        color: var(--medgrey);
+                        font-family: "nexa-bold";
+                    }
+                    select{
+                        background-color: var(--white);
+                        font-family: "nexa-bold";
+                        color: var(--grey);
+                    }
+                }
+                .submitquery,.appointmentform
+                {
+                    textarea,input{
+                        width: 100%;
+                        border: 1px solid var(--grey);
+                        margin-bottom: 1rem;
+                        padding-top: 0.6rem;
+                        padding-bottom: 0.6rem;
+                        color: var(--black);
+                        font-family: "nexa-bold";
+                    }
+                    .grey{
+                        color: var(--grey);
+                    }
+                    .primarybutton{
+                        margin-bottom: 2rem;
+                    }
+                }
+                .appointmentform
+                {
+                    input
+                    {
+                        margin-bottom: 1rem;
+                        margin-top: 0.7rem;
+                    }
+                    textarea{
+                        height: 5rem;
+                        color: var(--grey);
+                        margin-bottom: 0;
+                        margin-top: 0.5rem;
+                    }
+                    .radio_container
+                    {
+                        margin-top: 0.7rem;
+                        margin-bottom: 1rem;
+                        .radio
+                        {
+                            display: flex;
+                            justify-content: flex-start;
+                            align-items: center;
+                            input[type=radio]{
+                                width: 0.4rem;
+                                height: 0.4rem;
+                                margin-right: 0.7rem;
+                                margin-bottom: 0;
+                                margin-top: 0;
+                            }
+                            label
+                            {
+                                font-family: "nexa-light";
+                                font-size: 0.8rem;
+                                margin-bottom: 0;
+                            }
+                        }
+                        .radio:not(:last-child)
+                        {
+                            margin-bottom: 0.5rem;
+                        }
+                    }
+                    .button_container
+                    {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 0.7rem;
+                        margin-bottom: 1rem;
+                        button{
+                            margin-right: 0.5rem;
+                            padding: 0.2rem 0.5rem;
+                        }
+                        span{
+                            font-size: 0.8rem;
+                            font-family: "arial";
+                        }
+                    }
+                    .primarybutton{
+                        font-size: 0.7rem;
+                        margin-bottom: 0;
+                        margin-top: 1rem;
+                    }
+                }
+            }
+            h6
+            {
+                text-align: center;
+                padding-bottom: 2rem;
+                margin-top: 1rem;
+                color: var(--medgrey);
+                font-weight: 600;
+                a{
+                    color: var(--blue);
+                    font-weight: 600;
+                }
+            }
+        }   
+    }
+    footer
+    {
+        padding-bottom: 1rem;
+        h6{
+            text-align: center;
+            color: var(--black);
+            font-weight: 600;
+        }
+    }
+}
+@media screen and (min-width:768px)
+{
+    body
+    {
+        main
+        {
+            .login_container
+            {
+                width: 28rem;
+                .heading{
+                    padding: 2.3rem;
+                }
+                .formcontainer
+                {
+                    padding: 1.3rem;
+                    .loginform, .signupform, .submitquery
+                    {    
+                        input
+                        {
+                            margin-bottom: 0.8rem;
+                            padding-top: 1.1rem;
+                            padding-bottom: 1.1rem;
+                        }
+                        button{
+                            padding-top: 1.1rem;
+                            padding-bottom: 1.1rem;
+                        }
+                        button::after{
+                            top: 1.1rem;
+                            right: 1rem;
+                        }
+                        .mobileno_input{
+                            i{
+                                position: absolute;
+                                top: 1.1rem;
+                                right: 1rem;
+                            }
+                        }
+                    }
+                    .signupform
+                    {
+                        select,input{
+                            margin-bottom: 0.65rem;
+                            padding-top: 0.7rem;
+                            padding-bottom: 0.7rem;
+                        }
+                    }
+                    .submitquery
+                    {
+                        textarea,input{
+                            margin-bottom: 1rem;
+                            padding-top: 0.7rem;
+                            padding-bottom: 0.7rem;
+                            
+                        }
+                        textarea{
+                            height: 10rem;
+                        }
+                        button{
+                            margin-bottom: 2.3rem;
+                        }
+                    }
+                }
+                h6
+                {
+                    padding-bottom: 2.3rem;
+                }
+            }
+        }
+        footer
+        {
+            padding-bottom: 1.2rem;
+        }
+    }
+}
+@media screen and (min-width:1025px)
+{
+    body
+    {
+        main
+        {
+            .login_container
+            {
+                width: 30rem;
+                .heading{
+                    padding: 2.3rem;
+                    border-bottom: 1px solid var(--lightgrey);
+                }
+                .formcontainer
+                {
+                    padding: 1.4rem;
+                    .loginform, .signupform, .submitquery,.appointmentform
+                    {    
+                        input
+                        {
+                            margin-bottom: 0.8rem;
+                            padding-top: 1.2rem;
+                            padding-bottom: 1.2rem;
+                            border: 1px solid var(--lightgrey);
+                        }
+                        
+                        button{
+                            padding-top: 1.2rem;
+                            padding-bottom: 1.2rem;
+                        }
+                        button::after{
+                            top: 1.1rem;
+                            right: 1rem;
+                        }
+                        .mobileno_input{
+                            i{
+                                position: absolute;
+                                top: 1.1rem;
+                                right: 1rem;
+                            }
+                        }
+                    }
+                    .signupform
+                    {
+                        select,input{
+                            margin-bottom: 0.75rem;
+                            padding-top: 0.8rem;
+                            padding-bottom: 0.8rem;
+                        }
+                    }
+                    .submitquery,.appointmentform
+                    {
+                        textarea,input{
+                            margin-bottom: 1rem;
+                            padding-top: 0.8rem;
+                            padding-bottom: 0.8rem;
+                            
+                        }
+                        textarea{
+                            height: 10rem;
+                        }
+                        button{
+                            margin-bottom: 2.3rem;
+                        }
+                    }
+                    .appointmentform{
+                        label{
+                            font-size: 1.1rem;
+                        }
+                        textarea{
+                            height: 7rem;
+                            margin-bottom: 0;
+                        }
+                        .radio_container
+                        {
+                            .radio
+                            {
+                                input[type=radio]{
+                                    width: 0.6rem;
+                                    height: 0.6rem;
+                                }
+                                label
+                                {
+                                    font-family: "nexa-light";
+                                    font-size: 1rem;
+                                }
+                            }
+                            .radio:not(:last-child){
+                                margin-bottom: 0.7rem;
+                            }
+                        }
+                        .radio_container,input,.button_container
+                        {
+                            margin-bottom: 1.5rem;
+                        }
+                        .button_container{
+                            button{
+                                margin-bottom: 0;
+                                font-family: Arial, Helvetica, sans-serif;
+                            }
+                        }
+                    }
+                }
+                h6
+                {
+                    padding-bottom: 2.3rem;
+                }
+            }
+        }
+        footer
+        {
+            padding-bottom: 1.3rem;
+        }
+    }
+}

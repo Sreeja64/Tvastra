@@ -1,0 +1,376 @@
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0;
+}
+.groupdoctor,.hospitalbackground{
+    display: none;
+}
+.various_hospitals{
+    padding-bottom: 1rem;
+    .card
+    {
+        border: 1px solid var(--grey);
+        margin-bottom: 1rem;
+        .info
+        {
+            padding: 1rem 2.5rem;
+            h3{
+                color: var(--blue);
+                position: relative;
+                margin-bottom: 1.5rem;
+            }
+            h3::before{
+                content: '';
+                position: absolute;
+                left: -2.5rem;
+                top: 0.5rem;
+                height:0.15rem;
+                width:2rem;
+                background-color: var(--blue);
+            }
+            .personal_info
+            {
+                li{
+                    color: var(--black);
+                    position: relative;
+                    font-family: "fontawesome",'arial';
+                    margin-top: 0.8rem;
+                }
+                li:before{
+                    position: absolute;
+                    left: -1.5rem;
+                    top: 0rem;
+                    color: var(--blue);
+                }
+                .location::before
+                {
+                    content: '\f041';
+                }
+                .bed::before{
+                    content: '\f236 ';
+                }
+                .famous_treatment::before{
+                    content: '\f0f1 ';
+                }
+                .expertise::before{
+                    content: '\f0a3 ';
+                }
+                .degree::before{
+                    content: '\f19d ';
+                }
+                .clock::before{
+                    content: '\f017 ';
+                }
+                .building::before{
+                    content: '\f0f8 ';
+                }
+            }
+            .hospital_features
+            {
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 0.4rem;
+                li{
+                    padding: 0.5rem 0.8rem;
+                    color: var(--darkgrey);
+                    border: 1px solid var(--grey);
+                    border-radius: 2rem;
+                    font-family: "arial";
+                    letter-spacing: 0.02rem;
+                    font-size: 0.8rem;
+                    margin-right: 0.5rem;
+                    margin-top: 0.3rem;
+                }
+            }
+        }
+        .button_container{
+            display: flex;
+           justify-content: center;
+        }
+        figure
+        {
+            margin-top: 1rem;
+            height: 21.5rem;
+            overflow: hidden;
+            img{
+                width: 100%;
+            }
+        }
+        button
+        {
+            padding: 0.4rem 1.5rem;
+        }
+    }
+    .hospital{
+        figure
+        {
+            margin-top: 1rem;
+            height: 11rem;
+            overflow: hidden;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .left_container,.left_container_hospital{
+        display: none;
+    }
+}
+@media only screen and (min-width:768px)
+{
+    .showmore
+    {
+        padding: 0;
+        color: var(--blue);
+        background: none;
+        border: none;
+        text-align: left;
+        margin-top: 1rem;
+    }
+    .heading{
+        padding-top: 2rem;
+    }
+        .groupdoctor{
+            display: block;
+            background-image: url("../images/doctor_team.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height:20rem;
+            filter: brightness(1);
+            .blue{
+                background-color: rgba(143,202,241,0.7);
+                height:20rem;
+                display: flex;
+                align-items: center;
+                padding-left: 1.6rem; 
+                h1{
+                    color: var(--black);
+                    span{
+                        color: var(--black);
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .hospitalbackground{
+            display: none;
+        }
+        
+    .various_hospitals{
+        padding-bottom: 0.5rem;
+        padding-top: 2rem;
+        display: flex;
+        justify-content: space-between;
+        .left_container,.left_container_hospital{
+            display: block;
+            width: 20%;
+            padding-right:1rem;
+            h5{
+                background-color: var(--lightgrey);
+                padding: 1rem;
+                margin-bottom: 2rem;
+            }
+            label{
+                font-size: 0.7rem;
+            }
+            .filters{
+                padding-bottom: 1rem;
+                border-bottom: 2px solid var(--grey);
+                margin-bottom: 2rem;
+                .filter_heading
+                {
+                    display: flex;
+                    justify-content: space-between;
+                    h5{
+                        padding: 0;
+                        background: none;
+                        margin-bottom: 1rem;
+                        font-family: "nexa-light";
+                    }
+                    i{
+                        position: relative;
+                        padding-right: 1.8rem;
+                        color: var(--blue);
+                    }
+                    i::after{
+                        content:'';
+                        background-color: var(--grey);
+                        width: 1rem;
+                        height: 0.2rem;
+                        position: absolute;
+                        top: 0.3rem;
+                        right: 0.5rem;
+                    }
+                }
+                .filter_subheading
+                {
+                    display: flex;
+                    flex-direction: column;
+                    label{
+                        margin-left: 1rem;
+                        font-family: "nexa-light";
+                    }
+                    div
+                    {
+                        margin-bottom: 0.3rem;
+                    }
+                }
+            }
+            
+        }
+        .right_container,.right_container_hospital
+        {
+            width: 70%;
+            .card
+            {
+            display: grid;
+            grid-template-rows: 3fr 0.5fr;
+            grid-template-columns: 3fr 2fr;
+            margin-bottom: 1.5rem;
+            .info
+            {
+                padding: 1rem 2.5rem;
+                padding-right: 0;
+                margin-bottom: 0.5rem;
+                grid-row: 1/2;
+                grid-column: 1/1;
+                .personal_info
+                {
+                    display: grid;
+                    grid-gap: 1rem;
+                    grid-template-columns: 1fr 1fr;
+                    padding-left: 1rem;
+                    li{
+                       
+                        margin-top: 0rem;
+                    }
+                    li:before{
+                        position: absolute;
+                        left: -1.5rem;
+                        top: 0rem;
+                    }
+                    
+                }
+                .hospital_features
+                {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top: 1.1rem;
+                    li{
+                        padding: 0.5rem 0.8rem;
+                        color: var(--darkgrey);
+                        border: 1px solid var(--grey);
+                        border-radius: 2rem;
+                        font-family: "arial";
+                        letter-spacing: 0.02rem;
+                        font-size: 0.8rem;
+                        margin-right: 0.5rem;
+                        margin-top: 0.3rem;
+                    }
+                }
+            }
+            .button_container{
+                grid-row: 2/2;
+                grid-column: 1/1;
+                display: flex;
+                justify-content: flex-start;
+                padding-bottom: 1rem;
+                margin-left: 2rem;
+            }
+            figure
+            {
+                grid-row: 1/3;
+                grid-column: 2/2;
+                margin-top: 0;
+                height: 14rem;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+                .hospitalfigure{
+                    height: 100%;
+                }
+            button
+            {
+                padding: 0.4rem 2rem;
+            }
+            }
+            .hospital
+            {
+            width: 100%;
+            }
+        }
+        .right_container_hospital{
+            width: 100%;
+        }
+        .left_container_hospital
+        {
+            display: none;
+        }
+        .left_container{
+            width: 30%;
+        }
+    }
+}
+@media only screen and (min-width:1025px)
+{
+    .groupdoctor,.hospitalbackground{
+        display: block;
+        background-image: url("../images/doctor_team.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height:20rem;
+        filter: brightness(1);
+        .blue{
+            background-color: rgba(143,202,241,0.7);
+            height:20rem;
+            display: flex;
+            align-items: center;
+            padding-left: 5rem; 
+            h1{
+                color: var(--black);
+                span{
+                    color: var(--black);
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .various_hospitals
+    {
+        display: flex;
+        justify-content: space-between;
+        .right_container{
+            .card{
+                justify-content: space-between;
+                figure{
+                    height: 14rem;
+                    width: 14rem;
+                }
+            }
+        }
+        .right_container_hospital,.right_container{
+            width: 70%;
+        }
+        .right_container{
+            .card{
+                grid-template-columns: 3fr 1fr;
+            }
+        }
+        .left_container_hospital,.left_container
+        {
+            display: block;
+            width: 30%;
+            margin-right: 2rem;
+            label{
+                font-size: 1rem;
+            }
+        }
+        
+    }
+}

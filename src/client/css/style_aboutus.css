@@ -1,0 +1,317 @@
+h2, p {
+  text-align: center;
+}
+
+h2 {
+  line-height: 1.7rem;
+}
+
+section {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.background {
+  height: 20rem;
+  position: relative;
+}
+
+.background img {
+  height: 100%;
+  width: 100%;
+}
+
+.background .gradient {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.background .flex_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  padding: 1rem;
+}
+
+.background .flex_container h2 {
+  margin-bottom: 1rem;
+}
+
+.background .flex_container h2, .background .flex_container p {
+  color: var(--white);
+}
+
+.doctor_say .content h2 {
+  padding: 0 1rem;
+}
+
+.doctor_say .content p {
+  margin-top: 1rem;
+}
+
+.doctor_say .content figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1.5rem 0;
+}
+
+.get_free_checkup {
+  background-color: var(--black);
+}
+
+.get_free_checkup img {
+  display: none;
+}
+
+.get_free_checkup .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.get_free_checkup .content p {
+  margin-top: 1rem;
+}
+
+.get_free_checkup .content h2, .get_free_checkup .content p {
+  color: var(--white);
+}
+
+.get_free_checkup .content button {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.get_free_checkup .statistics .data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem;
+  border: 2px solid var(--medgrey);
+  border-radius: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.get_free_checkup .statistics .data h2 {
+  color: var(--white);
+}
+
+.get_free_checkup .statistics .data h6 {
+  color: var(--medgrey);
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    line-height: 2rem;
+  }
+  p {
+    line-height: 1.3rem;
+  }
+  section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .background {
+    height: 24rem;
+  }
+  .doctor_say {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .doctor_say .content {
+    width: 70%;
+  }
+  .doctor_say .content h2, .doctor_say .content p {
+    text-align: left;
+    padding: 0;
+  }
+  .doctor_say .content p {
+    margin-top: 2rem;
+  }
+  .doctor_say .content figure {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 0;
+  }
+  .get_free_checkup video {
+    display: none;
+  }
+  .get_free_checkup .content {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .get_free_checkup .content p {
+    text-align: left;
+  }
+  .get_free_checkup .content button {
+    margin: 3rem 0;
+  }
+  .get_free_checkup .statistics {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+  }
+  .get_free_checkup .statistics .data {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  h2 {
+    line-height: 2.4rem;
+  }
+  p {
+    line-height: 1.5rem;
+  }
+  section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  .background {
+    height: 28rem;
+  }
+  .doctor_say {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .doctor_say .content {
+    width: 70%;
+  }
+  .doctor_say .content h2, .doctor_say .content p {
+    text-align: left;
+    padding: 0;
+  }
+  .doctor_say .content p {
+    margin-top: 2rem;
+  }
+  .doctor_say .content figure {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin-bottom: 0;
+  }
+  .doctor_say figure {
+    width: 15rem;
+  }
+  .get_free_checkup {
+    padding: 0;
+    position: relative;
+  }
+  .get_free_checkup video {
+    display: block;
+    height: 30rem;
+    width: 100%;
+  }
+  .get_free_checkup img {
+    display: block;
+  }
+  .get_free_checkup .flex_container {
+    padding: 3rem 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .get_free_checkup .flex_container .content {
+    width: 50%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-right: 2rem;
+  }
+  .get_free_checkup .flex_container .content p {
+    margin-top: 1.5rem;
+    color: var(--medgrey);
+  }
+  .get_free_checkup .flex_container .content h2, .get_free_checkup .flex_container .content p {
+    text-align: left;
+  }
+  .get_free_checkup .flex_container .content button {
+    margin: 3rem 0;
+  }
+  .get_free_checkup .flex_container .statistics {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+  .get_free_checkup .flex_container .statistics .data {
+    margin: 0;
+  }
+  .get_free_checkup .gradient {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+/*# sourceMappingURL=style_aboutus.css.map */

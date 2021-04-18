@@ -1,0 +1,274 @@
+h2,p{
+    text-align: center;
+}
+h2{
+    line-height: 1.7rem;
+}
+section{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.background
+{
+    height: 20rem;
+    position: relative;
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    .gradient
+    {
+        background-color: rgba(0,0,0,0.4);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        z-index: 1;
+    }
+    .flex_container
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        z-index: 2;
+        padding: 1rem;
+        h2{
+            margin-bottom: 1rem;
+        }
+        h2,p{
+            color: var(--white);
+        }
+    }
+}
+.doctor_say{
+    .content
+    {
+        h2{
+            padding: 0 1rem;
+        }
+        p{
+            margin-top: 1rem;
+        }
+        figure{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1.5rem 0;
+        }
+    }
+}
+.get_free_checkup
+{
+    background-color: var(--black);
+    img{
+        display: none;
+    }
+    .content
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p{
+            margin-top: 1rem;
+        }
+        h2,p{
+            color: var(--white);
+        }
+        button{
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+    .statistics
+    {
+        .data
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            border: 2px solid var(--medgrey);
+            border-radius: 0.4rem;
+            margin-top: 0.5rem;
+            h2
+            {
+                color: var(--white);
+            }
+            h6
+            {
+                color: var(--medgrey);
+                margin-top: 0.5rem;
+                text-align: center;
+            }
+        }
+    }
+}
+@media screen and (min-width:768px)
+{
+    h2{
+        line-height: 2rem;
+    }
+    p{
+        line-height: 1.3rem;
+    }
+    section
+    {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    .background{
+        height: 24rem;
+    }
+    .doctor_say{
+        display: flex;
+        justify-content: space-between;
+        .content{
+            width: 70%;
+            h2,p
+            {
+                text-align: left;
+                padding: 0;
+            }
+            p{
+                margin-top: 2rem;
+            }
+            figure
+            {
+               justify-content: flex-start;
+               margin-bottom: 0;
+            }
+        }
+    }
+    .get_free_checkup
+    {
+        video{
+            display: none;
+        }
+        .content{
+            align-items: flex-start;
+            p{
+                text-align: left;
+            }
+            button
+            {
+                margin: 3rem 0;
+            }
+        }
+        .statistics{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-gap: 1rem;
+            .data{
+                margin: 0;
+            }
+        }
+    }
+}
+@media screen and (min-width:1025px)
+{
+        h2{
+            line-height: 2.4rem;
+        }
+        p{
+            line-height: 1.5rem;
+        }
+        section
+        {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+        .background{
+            height: 28rem;
+        }
+        .doctor_say{
+            display: flex;
+            justify-content: space-between;
+            .content{
+                width: 70%;
+                h2,p
+                {
+                    text-align: left;
+                    padding: 0;
+                }
+                p{
+                    margin-top: 2rem;
+                }
+                figure
+                {
+                   justify-content: flex-start;
+                   margin-bottom: 0;
+                }
+            }
+            figure
+            {
+                width: 15rem;
+            }
+        }
+        .get_free_checkup
+        {
+            padding: 0;
+            position: relative;
+            video{
+                display: block;
+                height: 30rem;
+                width: 100%;
+            }
+            img{
+                display: block;
+            }
+            .flex_container
+            {
+                padding: 3rem 5rem;
+                display: flex;
+                justify-content: space-between;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left:0;
+                right: 0;
+                z-index: 2;
+                .content{
+                    width: 50%;
+                    align-items: flex-start;
+                    margin-right: 2rem;
+                    p{
+                        margin-top: 1.5rem;
+                        color: var(--medgrey);
+                    }
+                    h2,p{
+                        text-align: left;
+                    }
+                    button
+                    {
+                        margin: 3rem 0;
+                    }
+                }
+                .statistics{
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    grid-template-rows: repeat(2,1fr);
+                    grid-gap: 1rem;
+                    .data{
+                        margin: 0;
+                    }
+                }
+            }
+            .gradient
+            {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left:0;
+                right: 0;
+                z-index: 1;
+                background-color: rgba(0,0,0,0.8);
+            }
+        }
+}  

@@ -1,0 +1,196 @@
+section .contact_info {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+section .contact_info .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .contact_info .info .icon {
+  margin-right: 1.5rem;
+}
+
+section .contact_info .info .icon i {
+  color: var(--blue);
+  font-size: 1.2rem;
+}
+
+section .contact_info .info .values h5 {
+  margin-bottom: 0.4rem;
+}
+
+section .contact_info .info:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+section .map {
+  position: relative;
+}
+
+section .map iframe {
+  width: 100%;
+  height: 12rem;
+  z-index: 1;
+}
+
+section .map .gradient {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5));
+  height: 12rem;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.message_form_container {
+  background-color: var(--lightblue);
+}
+
+.message_form_container .contact_info {
+  display: none;
+}
+
+.message_form_container form input {
+  width: 100%;
+  border: 1px solid var(--grey);
+  margin-bottom: 0.5rem;
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+  color: var(--black);
+  font-family: "nexa-bold";
+}
+
+.message_form_container form ::-webkit-input-placeholder {
+  color: var(--medgrey);
+  font-family: "nexa-bold";
+}
+
+.message_form_container form :-ms-input-placeholder {
+  color: var(--medgrey);
+  font-family: "nexa-bold";
+}
+
+.message_form_container form ::-ms-input-placeholder {
+  color: var(--medgrey);
+  font-family: "nexa-bold";
+}
+
+.message_form_container form ::placeholder {
+  color: var(--medgrey);
+  font-family: "nexa-bold";
+}
+
+.message_form_container .button_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.message_form_container .button_container button {
+  border-radius: 0;
+  font-size: 0.9rem;
+  font-family: "nexa-bold";
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.for_desktop_view {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  section .contact_info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section .contact_info .info .icon {
+    margin-right: 0.8rem;
+  }
+  section .contact_info .info:not(:last-child) {
+    margin-bottom: 0rem;
+  }
+  section .map iframe {
+    height: 20rem;
+  }
+  .message_form_container .contact_info {
+    display: none;
+  }
+  .message_form_container form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .message_form_container form div {
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+  .message_form_container form div:not(:last-child) {
+    margin-right: 1rem;
+  }
+  .message_form_container form div:last-child input {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  section .contact_info {
+    display: none;
+  }
+  section .map iframe {
+    height: 25rem;
+  }
+  .message_form_container {
+    padding-top: 0;
+    background-color: var(--white);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 1.5px solid var(--lightgrey);
+  }
+  .message_form_container .contact_info {
+    display: block;
+    width: 30%;
+    background-color: var(--white);
+    padding: 1.5rem 0;
+  }
+  .message_form_container .contact_info .info:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  .message_form_container .form_container {
+    width: 70%;
+    padding: 1.5rem 1.8rem;
+    background-color: var(--lightblue);
+  }
+}
+/*# sourceMappingURL=style_contact_us.css.map */

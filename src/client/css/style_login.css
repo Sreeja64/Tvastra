@@ -1,0 +1,418 @@
+body {
+  background-color: var(--lightblue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100vh;
+}
+
+body nav {
+  background-color: var(--white);
+}
+
+body main {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .login_container {
+  padding: 0;
+  width: 100%;
+  background-color: var(--white);
+  -webkit-box-shadow: 1px 1px 4px grey;
+          box-shadow: 1px 1px 4px grey;
+}
+
+body main .login_container .heading {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid var(--grey);
+}
+
+body main .login_container .heading h3 {
+  color: var(--blue);
+}
+
+body main .login_container .formcontainer {
+  padding: 1rem;
+}
+
+body main .login_container .formcontainer .loginform input, body main .login_container .formcontainer .signupform input, body main .login_container .formcontainer .submitquery input, body main .login_container .formcontainer .appointmentform input {
+  width: 100%;
+  border: 1px solid var(--grey);
+  margin-bottom: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: var(--black);
+  font-family: "nexa-bold";
+}
+
+body main .login_container .formcontainer .loginform ::-webkit-input-placeholder, body main .login_container .formcontainer .signupform ::-webkit-input-placeholder, body main .login_container .formcontainer .submitquery ::-webkit-input-placeholder, body main .login_container .formcontainer .appointmentform ::-webkit-input-placeholder {
+  color: var(--medgrey);
+  font-family: "nexa-bold";
+}
+
+body main .login_container .formcontainer .loginform :-ms-input-placeholder, body main .login_container .formcontainer .signupform :-ms-input-placeholder, body main .login_container .formcontainer .submitquery :-ms-input-placeholder, body main .login_container .formcontainer .appointmentform :-ms-input-placeholder {
+  color: var(--medgrey);
+  font-family: "nexa-bold";
+}
+
+body main .login_container .formcontainer .loginform ::-ms-input-placeholder, body main .login_container .formcontainer .signupform ::-ms-input-placeholder, body main .login_container .formcontainer .submitquery ::-ms-input-placeholder, body main .login_container .formcontainer .appointmentform ::-ms-input-placeholder {
+  color: var(--medgrey);
+  font-family: "nexa-bold";
+}
+
+body main .login_container .formcontainer .loginform ::placeholder, body main .login_container .formcontainer .signupform ::placeholder, body main .login_container .formcontainer .submitquery ::placeholder, body main .login_container .formcontainer .appointmentform ::placeholder {
+  color: var(--medgrey);
+  font-family: "nexa-bold";
+}
+
+body main .login_container .formcontainer .loginform .primarybutton, body main .login_container .formcontainer .signupform .primarybutton, body main .login_container .formcontainer .submitquery .primarybutton, body main .login_container .formcontainer .appointmentform .primarybutton {
+  position: relative;
+  padding-top: 0.85rem;
+  padding-bottom: 0.85rem;
+  letter-spacing: 0.35rem;
+  font-weight: 600;
+}
+
+body main .login_container .formcontainer .loginform .primarybutton::after, body main .login_container .formcontainer .signupform .primarybutton::after, body main .login_container .formcontainer .submitquery .primarybutton::after, body main .login_container .formcontainer .appointmentform .primarybutton::after {
+  content: '\f061';
+  position: absolute;
+  top: 0.8rem;
+  right: 1rem;
+  font-family: "fontawesome";
+  color: var(--white);
+}
+
+body main .login_container .formcontainer .loginform .mobileno_input, body main .login_container .formcontainer .signupform .mobileno_input, body main .login_container .formcontainer .submitquery .mobileno_input, body main .login_container .formcontainer .appointmentform .mobileno_input {
+  position: relative;
+}
+
+body main .login_container .formcontainer .loginform .mobileno_input i, body main .login_container .formcontainer .signupform .mobileno_input i, body main .login_container .formcontainer .submitquery .mobileno_input i, body main .login_container .formcontainer .appointmentform .mobileno_input i {
+  font-size: 1.2rem;
+  color: var(--grey);
+  position: absolute;
+  top: 0.85rem;
+  right: 1rem;
+}
+
+body main .login_container .formcontainer .loginform .mobileno_input input, body main .login_container .formcontainer .signupform .mobileno_input input, body main .login_container .formcontainer .submitquery .mobileno_input input, body main .login_container .formcontainer .appointmentform .mobileno_input input {
+  padding-right: 2.4rem;
+}
+
+body main .login_container .formcontainer .signupform .location_input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .login_container .formcontainer .signupform .location_input input:not(:last-child) {
+  margin-right: 1rem;
+}
+
+body main .login_container .formcontainer .signupform select, body main .login_container .formcontainer .signupform input {
+  width: 100%;
+  border: 1px solid var(--lightgrey);
+  margin-bottom: 0.5rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  color: var(--black);
+  font-family: "nexa-bold";
+}
+
+body main .login_container .formcontainer .signupform .grey {
+  color: var(--grey);
+}
+
+body main .login_container .formcontainer .signupform ::-webkit-input-placeholder {
+  color: var(--medgrey);
+  font-family: "nexa-bold";
+}
+
+body main .login_container .formcontainer .signupform :-ms-input-placeholder {
+  color: var(--medgrey);
+  font-family: "nexa-bold";
+}
+
+body main .login_container .formcontainer .signupform ::-ms-input-placeholder {
+  color: var(--medgrey);
+  font-family: "nexa-bold";
+}
+
+body main .login_container .formcontainer .signupform ::placeholder {
+  color: var(--medgrey);
+  font-family: "nexa-bold";
+}
+
+body main .login_container .formcontainer .signupform select {
+  background-color: var(--white);
+  font-family: "nexa-bold";
+  color: var(--grey);
+}
+
+body main .login_container .formcontainer .submitquery textarea, body main .login_container .formcontainer .submitquery input, body main .login_container .formcontainer .appointmentform textarea, body main .login_container .formcontainer .appointmentform input {
+  width: 100%;
+  border: 1px solid var(--grey);
+  margin-bottom: 1rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  color: var(--black);
+  font-family: "nexa-bold";
+}
+
+body main .login_container .formcontainer .submitquery .grey, body main .login_container .formcontainer .appointmentform .grey {
+  color: var(--grey);
+}
+
+body main .login_container .formcontainer .submitquery .primarybutton, body main .login_container .formcontainer .appointmentform .primarybutton {
+  margin-bottom: 2rem;
+}
+
+body main .login_container .formcontainer .appointmentform input {
+  margin-bottom: 1rem;
+  margin-top: 0.7rem;
+}
+
+body main .login_container .formcontainer .appointmentform textarea {
+  height: 5rem;
+  color: var(--grey);
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+
+body main .login_container .formcontainer .appointmentform .radio_container {
+  margin-top: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+body main .login_container .formcontainer .appointmentform .radio_container .radio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .login_container .formcontainer .appointmentform .radio_container .radio input[type=radio] {
+  width: 0.4rem;
+  height: 0.4rem;
+  margin-right: 0.7rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+body main .login_container .formcontainer .appointmentform .radio_container .radio label {
+  font-family: "nexa-light";
+  font-size: 0.8rem;
+  margin-bottom: 0;
+}
+
+body main .login_container .formcontainer .appointmentform .radio_container .radio:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+body main .login_container .formcontainer .appointmentform .button_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+body main .login_container .formcontainer .appointmentform .button_container button {
+  margin-right: 0.5rem;
+  padding: 0.2rem 0.5rem;
+}
+
+body main .login_container .formcontainer .appointmentform .button_container span {
+  font-size: 0.8rem;
+  font-family: "arial";
+}
+
+body main .login_container .formcontainer .appointmentform .primarybutton {
+  font-size: 0.7rem;
+  margin-bottom: 0;
+  margin-top: 1rem;
+}
+
+body main .login_container h6 {
+  text-align: center;
+  padding-bottom: 2rem;
+  margin-top: 1rem;
+  color: var(--medgrey);
+  font-weight: 600;
+}
+
+body main .login_container h6 a {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+body footer {
+  padding-bottom: 1rem;
+}
+
+body footer h6 {
+  text-align: center;
+  color: var(--black);
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  body main .login_container {
+    width: 28rem;
+  }
+  body main .login_container .heading {
+    padding: 2.3rem;
+  }
+  body main .login_container .formcontainer {
+    padding: 1.3rem;
+  }
+  body main .login_container .formcontainer .loginform input, body main .login_container .formcontainer .signupform input, body main .login_container .formcontainer .submitquery input {
+    margin-bottom: 0.8rem;
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+  }
+  body main .login_container .formcontainer .loginform button, body main .login_container .formcontainer .signupform button, body main .login_container .formcontainer .submitquery button {
+    padding-top: 1.1rem;
+    padding-bottom: 1.1rem;
+  }
+  body main .login_container .formcontainer .loginform button::after, body main .login_container .formcontainer .signupform button::after, body main .login_container .formcontainer .submitquery button::after {
+    top: 1.1rem;
+    right: 1rem;
+  }
+  body main .login_container .formcontainer .loginform .mobileno_input i, body main .login_container .formcontainer .signupform .mobileno_input i, body main .login_container .formcontainer .submitquery .mobileno_input i {
+    position: absolute;
+    top: 1.1rem;
+    right: 1rem;
+  }
+  body main .login_container .formcontainer .signupform select, body main .login_container .formcontainer .signupform input {
+    margin-bottom: 0.65rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+  }
+  body main .login_container .formcontainer .submitquery textarea, body main .login_container .formcontainer .submitquery input {
+    margin-bottom: 1rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+  }
+  body main .login_container .formcontainer .submitquery textarea {
+    height: 10rem;
+  }
+  body main .login_container .formcontainer .submitquery button {
+    margin-bottom: 2.3rem;
+  }
+  body main .login_container h6 {
+    padding-bottom: 2.3rem;
+  }
+  body footer {
+    padding-bottom: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  body main .login_container {
+    width: 30rem;
+  }
+  body main .login_container .heading {
+    padding: 2.3rem;
+    border-bottom: 1px solid var(--lightgrey);
+  }
+  body main .login_container .formcontainer {
+    padding: 1.4rem;
+  }
+  body main .login_container .formcontainer .loginform input, body main .login_container .formcontainer .signupform input, body main .login_container .formcontainer .submitquery input, body main .login_container .formcontainer .appointmentform input {
+    margin-bottom: 0.8rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    border: 1px solid var(--lightgrey);
+  }
+  body main .login_container .formcontainer .loginform button, body main .login_container .formcontainer .signupform button, body main .login_container .formcontainer .submitquery button, body main .login_container .formcontainer .appointmentform button {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+  body main .login_container .formcontainer .loginform button::after, body main .login_container .formcontainer .signupform button::after, body main .login_container .formcontainer .submitquery button::after, body main .login_container .formcontainer .appointmentform button::after {
+    top: 1.1rem;
+    right: 1rem;
+  }
+  body main .login_container .formcontainer .loginform .mobileno_input i, body main .login_container .formcontainer .signupform .mobileno_input i, body main .login_container .formcontainer .submitquery .mobileno_input i, body main .login_container .formcontainer .appointmentform .mobileno_input i {
+    position: absolute;
+    top: 1.1rem;
+    right: 1rem;
+  }
+  body main .login_container .formcontainer .signupform select, body main .login_container .formcontainer .signupform input {
+    margin-bottom: 0.75rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+  body main .login_container .formcontainer .submitquery textarea, body main .login_container .formcontainer .submitquery input, body main .login_container .formcontainer .appointmentform textarea, body main .login_container .formcontainer .appointmentform input {
+    margin-bottom: 1rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+  body main .login_container .formcontainer .submitquery textarea, body main .login_container .formcontainer .appointmentform textarea {
+    height: 10rem;
+  }
+  body main .login_container .formcontainer .submitquery button, body main .login_container .formcontainer .appointmentform button {
+    margin-bottom: 2.3rem;
+  }
+  body main .login_container .formcontainer .appointmentform label {
+    font-size: 1.1rem;
+  }
+  body main .login_container .formcontainer .appointmentform textarea {
+    height: 7rem;
+    margin-bottom: 0;
+  }
+  body main .login_container .formcontainer .appointmentform .radio_container .radio input[type=radio] {
+    width: 0.6rem;
+    height: 0.6rem;
+  }
+  body main .login_container .formcontainer .appointmentform .radio_container .radio label {
+    font-family: "nexa-light";
+    font-size: 1rem;
+  }
+  body main .login_container .formcontainer .appointmentform .radio_container .radio:not(:last-child) {
+    margin-bottom: 0.7rem;
+  }
+  body main .login_container .formcontainer .appointmentform .radio_container, body main .login_container .formcontainer .appointmentform input, body main .login_container .formcontainer .appointmentform .button_container {
+    margin-bottom: 1.5rem;
+  }
+  body main .login_container .formcontainer .appointmentform .button_container button {
+    margin-bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  body main .login_container h6 {
+    padding-bottom: 2.3rem;
+  }
+  body footer {
+    padding-bottom: 1.3rem;
+  }
+}
+/*# sourceMappingURL=style_login.css.map */

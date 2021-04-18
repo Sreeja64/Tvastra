@@ -1,0 +1,368 @@
+@font-face {
+  font-family: 'nexa-light';
+  src: url(Nexa-Light.otf);
+}
+
+@font-face {
+  font-family: 'nexa-bold';
+  src: url(Nexa-Bold.otf);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: var(--navyblue);
+}
+
+:root {
+  --lightblue: #8fcaf1;
+  --blue: #1e90ff;
+  --navyblue: #152246;
+  --lightgrey: #e2e4e5fb;
+  --grey: rgb(194, 194, 194);
+  --darkgrey: #4e4e4e;
+  --medgrey:grey;
+  --white:#ffffff;
+  --black: black;
+}
+
+h1, h2, h3, h4, h5, h6, label {
+  font-family: 'nexa-bold';
+  color: var(--navyblue);
+  letter-spacing: 0.05rem;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-family: 'nexa-light';
+  font-size: 1rem;
+}
+
+p {
+  text-align: center;
+  font-family: 'nexa-light';
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.1rem;
+}
+
+li {
+  list-style: none;
+  font-family: 'nexa-bold';
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  color: var(--grey);
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+section {
+  padding: 2rem 1rem;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+textarea, input {
+  font-family: 'nexa-light';
+  font-size: 0.9rem;
+  letter-spacing: 0.04rem;
+  padding: 0.8rem 1rem;
+  color: var(--navyblue);
+}
+
+::-webkit-input-placeholder {
+  font-family: 'nexa-light';
+  font-size: 0.9rem;
+  letter-spacing: 0.04rem;
+  color: var(--navyblue);
+}
+
+:-ms-input-placeholder {
+  font-family: 'nexa-light';
+  font-size: 0.9rem;
+  letter-spacing: 0.04rem;
+  color: var(--navyblue);
+}
+
+::-ms-input-placeholder {
+  font-family: 'nexa-light';
+  font-size: 0.9rem;
+  letter-spacing: 0.04rem;
+  color: var(--navyblue);
+}
+
+::placeholder {
+  font-family: 'nexa-light';
+  font-size: 0.9rem;
+  letter-spacing: 0.04rem;
+  color: var(--navyblue);
+}
+
+button {
+  padding: 0.5rem 2rem;
+  font-family: 'nexa-light';
+}
+
+.primarybutton {
+  font-size: 0.9rem;
+  border: 1px solid transparent;
+  background-color: var(--navyblue);
+  color: var(--white);
+  border: 1.5px solid var(--navyblue);
+}
+
+.secondarybutton {
+  font-size: 1.1rem;
+  background-color: var(--blue);
+  color: var(--white);
+  border: 1px solid var(--blue);
+  border-radius: 0.35rem;
+}
+
+.tertiarybutton {
+  font-size: 0.9rem;
+  border: 1px solid transparent;
+  color: var(--navyblue);
+  background-color: var(--white);
+  border: 1.5px solid var(--navyblue);
+}
+
+select {
+  background-color: var(--lightgrey);
+  color: var(--black);
+  border: 1px solid var(--lightgrey);
+  font-family: 'nexa-light';
+  font-size: 0.9rem;
+  letter-spacing: 0.03rem;
+  padding: 0.5rem 1rem;
+}
+
+option {
+  font-family: 'nexa-light';
+  font-size: 0.9rem;
+  color: var(--black);
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 1.8rem;
+    line-height: 1.9rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 1.15rem;
+  }
+  h4 {
+    font-size: 1.3rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+  h6 {
+    font-size: 0.9rem;
+  }
+  p {
+    font-size: 1rem;
+    letter-spacing: 0.12rem;
+    line-height: 1.2rem;
+  }
+  ul, ol {
+    list-style-type: none;
+  }
+  li {
+    font-size: 1rem;
+  }
+  nav {
+    padding: 1.2rem 1.6rem;
+  }
+  section {
+    padding: 2.5rem 1.6rem;
+  }
+  textarea, input {
+    font-size: 0.85rem;
+    letter-spacing: 0.06rem;
+    padding: 0.7rem 1rem;
+  }
+  ::-webkit-input-placeholder {
+    font-size: 0.9rem;
+    letter-spacing: 0.06rem;
+    padding: 0.7rem 1.4rem;
+  }
+  :-ms-input-placeholder {
+    font-size: 0.9rem;
+    letter-spacing: 0.06rem;
+    padding: 0.7rem 1.4rem;
+  }
+  ::-ms-input-placeholder {
+    font-size: 0.9rem;
+    letter-spacing: 0.06rem;
+    padding: 0.7rem 1.4rem;
+  }
+  ::placeholder {
+    font-size: 0.9rem;
+    letter-spacing: 0.06rem;
+    padding: 0.7rem 1.4rem;
+  }
+  button {
+    padding: 0.7rem 2.2rem;
+  }
+  .primarybutton {
+    font-size: 0.9rem;
+  }
+  .secondarybutton {
+    font-size: 1.1rem;
+  }
+  select {
+    font-size: 0.85rem;
+    letter-spacing: 0.05rem;
+    padding: 0.7rem 1.2rem;
+  }
+  option {
+    font-size: 0.85rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  p, button, input, ::-webkit-input-placeholder, select, option {
+    font-family: "nexa-bold";
+  }
+  p, button, input, :-ms-input-placeholder, select, option {
+    font-family: "nexa-bold";
+  }
+  p, button, input, ::-ms-input-placeholder, select, option {
+    font-family: "nexa-bold";
+  }
+  p, button, input, ::placeholder, select, option {
+    font-family: "nexa-bold";
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 2.1rem;
+  }
+  h3 {
+    font-size: 1.7rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  h5 {
+    font-size: 1.4rem;
+  }
+  h6 {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+  p {
+    font-size: 1.3rem;
+    letter-spacing: 0.08rem;
+    line-height: 1.6rem;
+  }
+  li {
+    font-size: 1.2rem;
+    color: var(--navyblue);
+  }
+  nav {
+    padding: 1.5rem 5.2rem;
+  }
+  section {
+    padding: 4rem 5.2rem;
+  }
+  textarea, input {
+    font-size: 1.2rem;
+    letter-spacing: 0.06rem;
+    padding: 1.3rem 1.8rem;
+  }
+  ::-webkit-input-placeholder {
+    font-size: 1.2rem;
+    letter-spacing: 0.06rem;
+    padding: 1.2rem 1.8rem;
+  }
+  :-ms-input-placeholder {
+    font-size: 1.2rem;
+    letter-spacing: 0.06rem;
+    padding: 1.2rem 1.8rem;
+  }
+  ::-ms-input-placeholder {
+    font-size: 1.2rem;
+    letter-spacing: 0.06rem;
+    padding: 1.2rem 1.8rem;
+  }
+  ::placeholder {
+    font-size: 1.2rem;
+    letter-spacing: 0.06rem;
+    padding: 1.2rem 1.8rem;
+  }
+  button {
+    padding: 1.2rem 3rem;
+  }
+  .primarybutton {
+    font-size: 1.2rem;
+  }
+  .secondarybutton {
+    font-size: 1.3rem;
+  }
+  .tertiarybutton {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  select {
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    padding: 0.8rem 1.4rem;
+  }
+  option {
+    font-size: 1.2rem;
+  }
+}
+/*# sourceMappingURL=theme.css.map */

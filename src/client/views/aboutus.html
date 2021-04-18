@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css" type="text/css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/style_aboutus.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+    <nav>
+        <figure>
+            <a href="index.html"><img src="../images/Logo.jpg"></a>
+        </figure>
+            <div class="menubar">
+                <i class="fa fa-bars" aria-hidden="true" onclick="menu()" id="bars"></i>
+                <ul class="nav_bar" id="nav_bar">
+                <li><a href="doctorlist.html">Doctor</a></li>
+                <li><a href="hospitallist.html">Hospitals</a></li>
+                <ul class="treatment_menu">
+                    <li><a>Treatment</a></li>
+                    <ul class="treatments">
+                        <li><a href="Dentistry.html">Dentistry</a></li>
+                        <li><a href="Dentistry.html">Cardiology</a></li>
+                        <li><a href="Dentistry.html">Cancer</a></li>
+                        <li><a href="Dentistry.html">Multiorgan</a></li>
+                        <li><a href="Dentistry.html">Orthopedic</a></li>
+                        <li><a href="Dentistry.html">Infertility</a></li>
+                    </ul>
+                </ul>
+                <li><a href="#exclusiveservice">Other Services</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                </ul>
+            </div>
+        <div class="header_buttons">
+            <button class="tertiarybutton" onclick="location.href='login.html';">Login / Sign Up</button>
+            <button class="primarybutton">Get a Quote</button>
+        </div>
+    </nav>
+    <figure class="background">
+        <img src="../images/aboutUs_background.jpeg">
+        <div class="gradient">
+        </div>
+        <div class="flex_container">
+            <div class="content">
+                <h2>Living healthy matters.</h2>
+                <p>Our specialists aspire to bridge the gap between your benifits plan and the health needs.</p>
+            </div>
+        </div>
+    </figure>
+    <section class="doctor_say">
+        <div class="content">
+            <h2>You have to begin to tell the story of your life as you now want it to be and discontinue the tales.</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta fugit inventore ea porro aliquam atque iste modi quia sed magnam totam facere accusamus voluptatem delectus illum, itaque facilis commodi tempore.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta fugit inventore ea porro aliquam atque iste modi quia sed magnam totam facere accusamus voluptatem delectus illum, itaque facilis commodi tempore.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta fugit inventore ea porro aliquam atque iste modi quia sed magnam totam facere accusamus voluptatem delectus illum, itaque facilis commodi tempore.</p>
+            <figure>
+                <img src="../images/signature.png">
+            </figure>
+        </div>
+        <figure>
+            <img src="../images/femaledoctor.png">
+        </figure>
+    </section>
+    <section class="get_free_checkup">
+        <img src="../images/get_free_checkup.jpg"> 
+        <div class="gradient"></div>
+        <div class="flex_container">
+            <div class="content">
+                <h2>Your wellness builds upon the medical daily.</h2>
+                <p>Find your best self here. Discover new ways to live an inspiring life through natural beauty, nutrition and diet, an active lifestyle, and better relationships.</p>
+                <button class="secondarybutton">Get a Free Checkup</button>
+            </div>
+            <div class="statistics">
+                <div class="data">
+                    <h2>12M</h2>
+                    <h6>Happy Patients</h6>
+                </div>
+                <div class="data">
+                    <h2>5K</h2>
+                    <h6>Medical Assistants</h6>
+                </div>
+                <div class="data">
+                    <h2>9.8</h2>
+                    <h6>Alexa Store</h6>
+                </div>
+                <div class="data">
+                    <h2>3.2K</h2>
+                    <h6>Doctors Available</h6>
+                </div>
+                <div class="data">
+                    <h2>45K</h2>
+                    <h6>Cure Rate</h6>
+                </div>
+                <div class="data">
+                    <h2>75</h2>
+                    <h6>Health Points</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="Need_help">
+        <div>
+            <h2>Need Help?</h2>
+            <p>Just let us know, we will be happy to assist you</p>
+        </div>
+        <button class="secondarybutton" onclick="location.href='submitquery.html'">Submit your enquiry</button>
+    </section>
+    <footer>
+        <section class="footerinfo">
+            <div class="links_icon">
+                <img src="../images/footer.png" width="40%">
+                <div class="links">
+                    <a href="doctorlist.html"><li>Doctor</li></a>
+                    <a href="hospitallist.html"><li>Hospital</li>
+                    <a href="contactus.html"><li>Contact Us</li>
+                    <a href="#exclusiveservice"><li>Other services</li></a>
+                    <a href="FAQ.html"><li>FAQs</li></a>
+                </div>
+            </div>
+            <div class="social_links_and_copywright">
+                <div class="social_links">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </div>
+                <h6>All Rights Reserved. <i class="fa fa-copyright" aria-hidden="true"></i> tvastra 2018</h6>
+            </div>
+        </section>
+    </footer>
+    <script>
+        function menu(){
+            const nav=document.getElementById("nav_bar");
+            if(nav.style.display=="none")
+            {
+                nav.style.display="block";
+            }
+            else
+            {
+                nav.style.display="none";
+            }
+        }
+    </script>
+</body>
+</html>

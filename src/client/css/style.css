@@ -1,0 +1,1400 @@
+nav figure {
+  width: 40%;
+}
+
+nav .nav_bar {
+  display: none;
+}
+nav .menubar{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+nav .menubar .nav_bar{
+  position: absolute;
+  z-index: 5;
+  top: 1rem;
+  right: -0.5rem;
+  border: 1px solid var(--blue);
+  background-color: var(--white);
+}
+nav .menubar .nav_bar li{
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+nav .menubar .nav_bar a{
+  margin-left: 0;
+}
+nav .header_buttons {
+  display: none;
+}
+nav .nav_bar li a {
+  color: var(--darkgrey);
+  margin-left: 1rem;
+  font-family: "arial";
+  cursor: pointer;
+}
+nav .nav_bar .treatment_menu{
+  position: relative;
+
+}
+nav .nav_bar .treatment_menu .treatments {
+  display: flex;
+  margin-top: 1rem;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white);
+  border: 2px solid var(--blue);
+  padding: 0;
+}
+nav .nav_bar .treatment_menu .treatments {
+  display: none;
+  position: absolute;
+  top: 0rem;
+  left: -11rem;
+  z-index: 5;
+}
+nav .nav_bar .treatment_menu .treatments li:not(:last-child){
+  margin-bottom: 0rem;
+  border-bottom: 1px solid var(--grey);
+}
+nav .nav_bar .treatment_menu .treatments li{
+  padding: 1rem 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+nav .nav_bar .treatment_menu .treatments a{
+  color: var(--black);
+  margin-left: 0;
+}
+nav .nav_bar .treatment_menu:hover .treatments{
+  display: flex;
+}
+.find_affordable_healthcare {
+  background-color: var(--lightblue);
+}
+
+.find_affordable_healthcare h1 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.find_affordable_healthcare button {
+  margin-top: 0.8rem;
+}
+
+.find_affordable_healthcare p {
+  margin-bottom: 0.9rem;
+}
+
+.find_affordable_healthcare form {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.find_affordable_healthcare input {
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.find_affordable_healthcare .locationinput {
+  position: relative;
+  width: 100%;
+}
+
+.find_affordable_healthcare .locationinput .fa-globe {
+  font-size: 1rem;
+  position: absolute;
+  top: 1.3rem;
+  right: 0.5rem;
+}
+
+.find_affordable_healthcare .locationinput .fa-map-marker {
+  font-size: 1rem;
+  position: absolute;
+  top: 1.2rem;
+  left: 0.5rem;
+}
+
+.find_affordable_healthcare .locationinput input {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.how_it_works h1 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.how_it_works p {
+  margin-bottom: 1.4rem;
+}
+
+.how_it_works li {
+  font-size: 1.1rem;
+  list-style: none;
+  padding: 1rem 1rem;
+  border: 1px solid var(--darkgrey);
+  border-radius: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+.how_it_works span {
+  margin-right: 0.6rem;
+  color: var(--grey);
+}
+
+.how_it_works .clicked {
+  color: var(--black);
+}
+
+.how_it_works .clicked span {
+  color: var(--blue);
+}
+
+.how_it_works .article {
+  border: 0;
+}
+
+.how_it_works .article div {
+  padding: 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.how_it_works .article div h4 {
+  margin-bottom: 0.8rem;
+  margin-top: 0.8rem;
+  text-align: center;
+}
+
+.how_it_works .article div p {
+  margin-bottom: 0;
+}
+
+.world_class_expert_doctors {
+  background-color: var(--navyblue);
+}
+
+.world_class_expert_doctors h1 {
+  color: var(--white);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.world_class_expert_doctors p {
+  color: var(--white);
+  margin-bottom: 0.4rem;
+}
+
+.world_class_expert_doctors .doctors div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.world_class_expert_doctors .doctors div .expert_doctor {
+  margin-top: 1rem;
+  height: 21rem;
+  overflow: hidden;
+}
+
+.world_class_expert_doctors .doctors div .personalinfo {
+  background-color: var(--white);
+  padding: 1rem 2.5rem;
+  border-bottom: 5px solid var(--lightblue);
+}
+
+.world_class_expert_doctors .doctors div .personalinfo h5 {
+  margin-bottom: 0.5rem;
+  color: var(--blue);
+  position: relative;
+}
+
+.world_class_expert_doctors .doctors div .personalinfo h5:before {
+  content: '';
+  position: absolute;
+  left: -2.5rem;
+  top: 0.5rem;
+  height: 0.15rem;
+  width: 2rem;
+  background-color: var(--blue);
+}
+
+.world_class_expert_doctors .doctors div .personalinfo h6 {
+  color: var(--black);
+  text-align: left;
+  margin-bottom: 0.15rem;
+  line-height: 1rem;
+}
+
+.Featured_Medical_Treatment h1 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.Featured_Medical_Treatment p {
+  margin-bottom: 1.4rem;
+}
+
+.Featured_Medical_Treatment .treatment {
+  position: relative;
+  margin-top: 0.8rem;
+  height: 15rem;
+  overflow: hidden;
+}
+
+.Featured_Medical_Treatment .treatment img {
+  height: 100%;
+}
+
+.Featured_Medical_Treatment .treatment .treatmentinfo {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#090a24), to(transparent));
+  background-image: linear-gradient(0deg, #090a24, transparent);
+  padding: 1rem 1.5rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  position: absolute;
+  bottom: 0rem;
+}
+
+.Featured_Medical_Treatment .treatment .treatmentinfo h5 {
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.Featured_Medical_Treatment .treatment .treatmentinfo h6 {
+  color: var(--white);
+}
+
+.Exclusive_services {
+  background-color: var(--lightgrey);
+}
+
+.Exclusive_services h1 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.Exclusive_services p {
+  margin-bottom: 0.9rem;
+}
+
+.Exclusive_services .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Exclusive_services .services figure {
+  background-color: var(--white);
+  border-radius: 1rem;
+  margin-top: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 10rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5rem 0;
+}
+
+.Exclusive_services .services figure h6 {
+  margin-top: 0.8rem;
+  font-family: "nexa-bold";
+  color: var(--darkgrey);
+}
+
+.Exclusive_services .services figure img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.Need_help {
+  background-color: var(--lightblue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Need_help h2 {
+  margin-bottom: 0.8rem;
+  text-align: center;
+  color: var(--white);
+}
+
+.Need_help button {
+  margin-top: 1rem;
+}
+
+.more_services {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: var(--lightblue);
+}
+
+.more_services h1 {
+  color: var(--white);
+  text-align: center;
+}
+
+.more_services .button_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.more_services .button_container .icon_button {
+  padding: 0.5rem 0.7rem;
+  border: 1px solid transparent;
+  border-radius: 100%;
+  background-color: var(--white);
+}
+
+.more_services .button_container .icon_button i {
+  color: var(--navyblue);
+}
+
+.more_services .button_container .icon_button:not(:last-child) {
+  margin-right: 0.8rem;
+}
+
+.more_services .services {
+  border: 0px solid transparent;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: 1px 1px 4px grey;
+          box-shadow: 1px 1px 4px grey;
+}
+
+.more_services .services figure {
+  height: 10rem;
+  overflow: hidden;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+.more_services .services figure img {
+  height: 100%;
+  width: 100%;
+}
+
+.more_services .services h5 {
+  background-color: var(--white);
+  padding: 1.5rem 2rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  position: relative;
+}
+
+.more_services .services h5::before {
+  content: '';
+  position: absolute;
+  top: 2rem;
+  left: -0.05rem;
+  height: 0.1rem;
+  width: 1.5rem;
+  background-color: var(--blue);
+}
+
+.more_services .services:not(:last-child) {
+  margin-bottom: 0.7rem;
+}
+
+.footerinfo {
+  background-color: var(--navyblue);
+  border-bottom: 0.4rem solid var(--blue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footerinfo .links_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footerinfo .links_icon img {
+  margin-bottom: 0.4rem;
+}
+
+.footerinfo .links_icon .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footerinfo .links_icon .links li {
+  margin-top: 0.8rem;
+  font-family: 'nexa-light';
+}
+
+.footerinfo .social_links {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footerinfo .social_links i {
+  font-size: 0.9rem;
+  color: var(--grey);
+  margin-right: 1.5rem;
+}
+
+.footerinfo h6 {
+  color: var(--grey);
+  margin-top: 1rem;
+  font-family: "nexa-bold";
+}
+
+.footerinfo h6 i {
+  color: var(--grey);
+}
+
+@media screen and (min-width: 768px) {
+  nav figure {
+    width: 20%;
+  }
+  nav .nav_bar {
+    display: none;
+  }
+  nav .nav_bar .treatment_menu{
+    position: relative;
+
+  }
+  nav .nav_bar .treatment_menu .treatments {
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    border: 2px solid var(--blue);
+    padding: 0 0;
+  }
+  nav .nav_bar .treatment_menu .treatments {
+    display: none;
+    position: absolute;
+    top: 0rem;
+    left: -11rem;
+    z-index: 5;
+  }
+  nav .nav_bar .treatment_menu .treatments li:not(:last-child){
+    margin-bottom: 0;
+    border-bottom: 1px solid var(--grey);
+  }
+  nav .nav_bar .treatment_menu .treatments li{
+    padding: 1rem 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  nav .nav_bar .treatment_menu .treatments a{
+    color: var(--black);
+    margin-left: 0;
+  }
+  nav .nav_bar .treatment_menu:hover .treatments{
+    display: flex;
+  }
+  .find_affordable_healthcare form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .find_affordable_healthcare form input, .find_affordable_healthcare form button {
+    margin-top: 0;
+  }
+  .find_affordable_healthcare p {
+    margin-bottom: 1.4rem;
+  }
+  .find_affordable_healthcare .locationinput {
+    width: 60%;
+    margin-right: 0.15rem;
+  }
+  .find_affordable_healthcare .locationinput .fa-globe {
+    font-size: 1rem;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+  }
+  .find_affordable_healthcare .locationinput .fa-map-marker {
+    font-size: 1rem;
+    position: absolute;
+    top: 0.75rem;
+    left: 0.5rem;
+  }
+  .how_it_works h1 {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  .how_it_works p {
+    margin-bottom: 1.9rem;
+    text-align: left;
+  }
+  .how_it_works li {
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: var(--grey);
+    margin-top: 0;
+    border: 1px solid var(--grey);
+  }
+  .how_it_works .list_container {
+    display: -ms-grid;
+    display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 4rem;
+    grid-row-gap: 0.6rem;
+        grid-template-areas: "item1 article"
+ "item2 article"
+ "item3 article"
+ "item4 article"
+ "item5 article"
+ "item6 article"
+ "item7 article";
+  }
+  .how_it_works .list_container .article {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 7;
+    -ms-grid-column: 2;
+    grid-area: article;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 3rem 0;
+  }
+  .how_it_works .list_container .article figure {
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+  .how_it_works .list_container .article img {
+    height: auto;
+    width: 100%;
+  }
+  .how_it_works .list_container .article h4 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .how_it_works .list_container .article p {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .how_it_works .list_container .items {
+    width: 100%;
+  }
+  .how_it_works .list_container #item1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: item1;
+    color: var(--black);
+    border: 2px solid var(--blue);
+  }
+  .how_it_works .list_container #item2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: item2;
+  }
+  .how_it_works .list_container #item3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: item3;
+  }
+  .how_it_works .list_container #item4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: item4;
+  }
+  .how_it_works .list_container #item5 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: item5;
+  }
+  .how_it_works .list_container #item6 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: item6;
+  }
+  .how_it_works .list_container #item7 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    grid-area: item7;
+  }
+  .world_class_expert_doctors p {
+    margin-bottom: 1.4rem;
+  }
+  .world_class_expert_doctors .doctors {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  .world_class_expert_doctors .doctors div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 2.5fr 1fr;
+        grid-template-rows: 2.5fr 1fr;
+    margin-top: 0;
+  }
+  .world_class_expert_doctors .doctors div .expert_doctor {
+    margin-top: 0;
+    overflow: hidden;
+  }
+  .world_class_expert_doctors .doctors div .expert_doctor img {
+    height: auto;
+  }
+  .Featured_Medical_Treatment p {
+    margin-bottom: 0.4rem;
+  }
+  .Featured_Medical_Treatment .variety_of_treatements {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .Featured_Medical_Treatment .variety_of_treatements .treatment {
+    position: relative;
+    margin-top: 1rem;
+    width: 22rem;
+  }
+  .Featured_Medical_Treatment .variety_of_treatements .treatment img {
+    height: 22rem;
+  }
+  .Exclusive_services p {
+    margin-bottom: 0.7rem;
+  }
+  .Exclusive_services .services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Exclusive_services .services figure {
+    width: 14rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 0.8rem;
+  }
+  .more_services .flex_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .more_services .flex_container .button_container {
+    margin-top: 0;
+  }
+  .more_services .service {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .more_services .service .services {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  .more_services .service .services:not(:last-child) {
+    margin: 0;
+    margin-right: 1rem;
+  }
+  .Need_help h2 {
+    margin-bottom: 1.6rem;
+  }
+  .Need_help button {
+    margin-top: 1.4rem;
+  }
+  .footerinfo {
+    background-color: var(--white);
+    border-bottom: 0.5rem solid var(--blue);
+  }
+  .footerinfo .links_icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .footerinfo .links_icon img {
+    width: 10rem;
+    margin-bottom: 0;
+  }
+  .footerinfo .links_icon .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footerinfo .links_icon .links li {
+    font-family: "nexa-bold";
+    color: var(--navyblue);
+    margin-right: 1rem;
+    margin-top: 0;
+  }
+  .footerinfo .social_links_and_copywright {
+    width: 100%;
+    margin-top: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footerinfo .social_links_and_copywright .social_links i {
+    font-size: 1rem;
+    color: var(--navyblue);
+    margin-right: 0;
+    margin-left: 1.5rem;
+  }
+  .footerinfo .social_links_and_copywright h6 {
+    font-family: "nexa-bold";
+    color: var(--navyblue);
+  }
+  .footerinfo .social_links_and_copywright h6 i {
+    color: var(--navyblue);
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  p, input, ::-webkit-input-placeholder {
+    font-family: "nexa-light";
+  }
+  p, input, :-ms-input-placeholder {
+    font-family: "nexa-light";
+  }
+  p, input, ::-ms-input-placeholder {
+    font-family: "nexa-light";
+  }
+  p, input, ::placeholder {
+    font-family: "nexa-light";
+  }
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav figure {
+    width: 15%;
+  }
+  nav .fa-bars {
+    display: none;
+  }
+  nav .nav_bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav .nav_bar li{
+    padding: 0 0;
+  }
+  nav .nav_bar li a {
+    color: var(--darkgrey);
+    padding: 0.5rem;
+    border: 1px solid transparent;
+    margin-left: 1rem;
+    font-family: "arial";
+    cursor: pointer;
+  }
+  nav .nav_bar li a:hover{
+    border: 1px solid var(--blue);
+    border-radius: 1.5rem;
+  }
+  nav .menubar .nav_bar{
+    border: none;
+  }
+  nav .nav_bar .treatment_menu{
+    position: relative;
+
+  }
+  nav .nav_bar .treatment_menu .treatments {
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    border: 2px solid var(--blue);
+    padding: 0 0;
+  }
+  nav .nav_bar .treatment_menu .treatments {
+    display: none;
+    position: absolute;
+    top: 2rem;
+    left: -3rem;
+    z-index: 5;
+  }
+  nav .nav_bar .treatment_menu .treatments li:not(:last-child){
+    margin-bottom: 0;
+    border-bottom: 1px solid var(--grey);
+  }
+  nav .nav_bar .treatment_menu .treatments li{
+    padding: 1rem 3rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  nav .nav_bar .treatment_menu .treatments a{
+    color: var(--black);
+    margin-left: 0;
+    border: none;
+    padding: none;
+  }
+  nav .nav_bar .treatment_menu:hover .treatments{
+    display: flex;
+  }
+  nav .header_buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav .header_buttons button {
+    margin-right: 0.8rem;
+    border-radius: 0.25rem;
+    padding: 0.8rem 2rem;
+  }
+  nav .nav_bar {
+    position: relative;
+    padding: 0 0;
+    border: none;
+    background:none;
+  }
+  nav .nav_bar li:not(:last-child) {
+    border-bottom: none;
+  } 
+  .find_affordable_healthcare {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-image: url("../images/find_affordable_healthcare_back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 25rem;
+  }
+  nav .menubar .nav_bar{
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+  .find_affordable_healthcare .content {
+    width: 50%;
+  }
+  .find_affordable_healthcare .content h1 {
+    text-align: left;
+    margin-bottom: 1rem;
+  }
+  .find_affordable_healthcare .content p {
+    text-align: justify;
+    margin-bottom: 1.9rem;
+  }
+  .find_affordable_healthcare form {
+    width: 70%;
+  }
+  .find_affordable_healthcare form .locationinput {
+    width: 60%;
+    margin-right: 0.15rem;
+  }
+  .find_affordable_healthcare form .locationinput .fa-globe {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 1.4rem;
+    right: 0.9rem;
+  }
+  .find_affordable_healthcare form .locationinput .fa-map-marker {
+    font-size: 1.2rem;
+    position: absolute;
+    top: 1.4rem;
+    left: 0.9rem;
+  }
+  .find_affordable_healthcare form .locationinput input {
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+  }
+  .how_it_works h1 {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  .how_it_works p {
+    margin-bottom: 1.9rem;
+    text-align: left;
+  }
+  .how_it_works li {
+    font-size: 1.6rem;
+    padding: 2rem 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: var(--grey);
+    margin-top: 0;
+    border: 1px solid var(--grey);
+  }
+  .how_it_works .list_container {
+    display: -ms-grid;
+    display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 4rem;
+    grid-row-gap: 0.6rem;
+        grid-template-areas: "item1 article"
+ "item2 article"
+ "item3 article"
+ "item4 article"
+ "item5 article"
+ "item6 article"
+ "item7 article";
+  }
+  .how_it_works .list_container .article {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 7;
+    -ms-grid-column: 2;
+    grid-area: article;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 3rem 0;
+  }
+  .how_it_works .list_container .article figure {
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
+  .how_it_works .list_container .article img {
+    height: auto;
+    width: 100%;
+  }
+  .how_it_works .list_container .article h4 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .how_it_works .list_container .article p {
+    margin-bottom: 0;
+    text-align: center;
+  }
+  .how_it_works .list_container .items {
+    width: 100%;
+  }
+  .how_it_works .list_container #item1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: item1;
+    color: var(--black);
+    border: 2px solid var(--blue);
+  }
+  .how_it_works .list_container #item2 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: item2;
+  }
+  .how_it_works .list_container #item3 {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: item3;
+  }
+  .how_it_works .list_container #item4 {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: item4;
+  }
+  .how_it_works .list_container #item5 {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+    grid-area: item5;
+  }
+  .how_it_works .list_container #item6 {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+    grid-area: item6;
+  }
+  .how_it_works .list_container #item7 {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+    grid-area: item7;
+  }
+  .world_class_expert_doctors h1, .world_class_expert_doctors p {
+    text-align: left;
+  }
+  .world_class_expert_doctors h1 {
+    margin-bottom: 1rem;
+  }
+  .world_class_expert_doctors p {
+    margin-bottom: 1.9rem;
+  }
+  .world_class_expert_doctors .doctors {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  .world_class_expert_doctors .doctors div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 0.3fr;
+        grid-template-rows: 1fr 0.3fr;
+    margin-top: 0;
+  }
+  .world_class_expert_doctors .doctors div .expert_doctor {
+    margin-top: 0;
+    overflow: hidden;
+  }
+  .world_class_expert_doctors .doctors div .personalinfo h5 {
+    margin-bottom: 0.6rem;
+  }
+  .world_class_expert_doctors .doctors div .personalinfo h6 {
+    margin-bottom: 0.5rem;
+  }
+  .Featured_Medical_Treatment h1, .Featured_Medical_Treatment p {
+    text-align: left;
+  }
+  .Featured_Medical_Treatment h1 {
+    margin-bottom: 1rem;
+  }
+  .Featured_Medical_Treatment p {
+    margin-bottom: 1.9rem;
+  }
+  .Featured_Medical_Treatment .variety_of_treatements {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 0.25fr 0.25fr 1.5fr;
+        grid-template-rows: 1fr 0.25fr 0.25fr 1.5fr;
+    -ms-grid-columns: 2fr 2fr 2fr;
+        grid-template-columns: 2fr 2fr 2fr;
+    grid-gap: 1rem;
+        grid-template-areas: "dentist cancer cardio"
+ "multiorgan cancer cardio"
+ "multiorgan cancer infertility"
+ "multiorgan ortho infertility";
+  }
+  .Featured_Medical_Treatment .variety_of_treatements .dentistry {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: dentist;
+  }
+  .Featured_Medical_Treatment .variety_of_treatements .cancer {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 2;
+    grid-area: cancer;
+  }
+  .Featured_Medical_Treatment .variety_of_treatements .cardio {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    grid-area: cardio;
+  }
+  .Featured_Medical_Treatment .variety_of_treatements .multiorgan {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    -ms-grid-column: 1;
+    grid-area: multiorgan;
+  }
+  .Featured_Medical_Treatment .variety_of_treatements .ortho {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: ortho;
+  }
+  .Featured_Medical_Treatment .variety_of_treatements .infertility {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    grid-area: infertility;
+  }
+  .Featured_Medical_Treatment .variety_of_treatements .treatment {
+    position: relative;
+    margin-top: 0;
+    margin-right: 0;
+    height: auto;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .Featured_Medical_Treatment .variety_of_treatements .treatment .treatmentinfo {
+    padding: 1.5rem 1.5rem;
+  }
+  .Featured_Medical_Treatment .variety_of_treatements .treatment img {
+    height: 100%;
+  }
+  .Exclusive_services h1, .Exclusive_services p {
+    text-align: left;
+  }
+  .Exclusive_services h1 {
+    margin-bottom: 1rem;
+  }
+  .Exclusive_services p {
+    margin-bottom: 1.9rem;
+  }
+  .Exclusive_services .services {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0;
+  }
+  .Exclusive_services .services figure {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-right: 0.3rem;
+    border-radius: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    margin-top: 0;
+  }
+  .Exclusive_services .services figure h6 {
+    margin-top: 1.2rem;
+  }
+  .Need_help {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Need_help div h2, .Need_help div p {
+    text-align: left;
+  }
+  .Need_help div h2 {
+    margin-bottom: 1rem;
+  }
+  .Need_help div p {
+    margin-bottom: 0rem;
+  }
+  .Need_help button {
+    margin-top: 0;
+  }
+  .footerinfo {
+    background-color: var(--white);
+    border-bottom: 0.5rem solid var(--blue);
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .footerinfo .links_icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  .footerinfo .links_icon img {
+    height: 2rem;
+    width: 10rem;
+  }
+  .footerinfo .links_icon .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footerinfo .links_icon .links li {
+    margin-right: 1rem;
+    font-family: "arial";
+  }
+  .footerinfo .social_links_and_copywright {
+    width: 100%;
+    margin-top: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footerinfo .social_links_and_copywright .social_links i {
+    font-size: 1.2rem;
+    color: var(--navyblue);
+    margin-right: 0;
+    margin-left: 1.5rem;
+  }
+  .footerinfo .social_links_and_copywright h6 {
+    font-family: "nexa-bold";
+    color: var(--navyblue);
+  }
+}
+/*# sourceMappingURL=style.css.map */

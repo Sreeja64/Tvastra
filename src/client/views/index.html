@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css" type="text/css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <nav>
+        <figure>
+            <a href="index.html"><img src="../images/Logo.jpg"></a>
+        </figure>
+            <div class="menubar">
+                <i class="fa fa-bars" aria-hidden="true" onclick="menu()" id="bars"></i>
+                <ul class="nav_bar" id="nav_bar">
+                <li><a href="doctorlist.html">Doctor</a></li>
+                <li><a href="hospitallist.html">Hospitals</a></li>
+                <ul class="treatment_menu">
+                    <li><a>Treatment</a></li>
+                    <ul class="treatments">
+                        <li><a href="Dentistry.html">Dentistry</a></li>
+                        <li><a href="Dentistry.html">Cardiology</a></li>
+                        <li><a href="Dentistry.html">Cancer</a></li>
+                        <li><a href="Dentistry.html">Multiorgan</a></li>
+                        <li><a href="Dentistry.html">Orthopedic</a></li>
+                        <li><a href="Dentistry.html">Infertility</a></li>
+                    </ul>
+                </ul>
+                <li><a href="#exclusiveservice">Other Services</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                </ul>
+            </div>
+        <div class="header_buttons">
+            <button class="tertiarybutton" onclick="location.href='login.html';">Login / Sign Up</button>
+            <button class="primarybutton">Get a Quote</button>
+        </div>
+    </nav>
+    <section class="find_affordable_healthcare">
+        <div class="content">
+            <h1>Find Affordable Healthcare</h1>
+            <p>
+                Join the thousands of others who have exercised their rights to quality healthcare at a price you can
+                afford
+            </p>
+        </div>
+        <form>
+            <div class="locationinput">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <input type="text" placeholder="   Ahmedabad">
+                <i class="fa fa-globe" aria-hidden="true"></i>
+            </div>
+            <input type="text" placeholder="Search for Doctor, hospitals and treatments">
+            <button class="primarybutton">Search</button>
+        </form>
+
+    </section>
+    <section class="how_it_works">
+        <h1>How it works</h1>
+        <p>
+            Various facilities are provided here. But there is a protocol which needs to be followed so that you get the
+            service
+            at its best.
+        </p>
+        <div class="list_container">
+            <li id="item1" class="items"><span>01</span> Fix Consultation</li>
+            <li class="article" id="article1">
+                    <figure>
+                        <img src="../images/fix_consultation.png" alt="Fix consultation">
+                    </figure>
+                    <div>
+                        <h4>Fix Consultation</h4>
+                        <p>This depicts that the user will have to fix appointment first when it selects a particular
+                        doctor.
+                        </p>
+                    </div>
+            </li>
+            <li id="item2" class="items"><span>02</span> Upload Medical Reports</li>
+            <li class="article" id="article2" style="display: none;">
+                <figure>
+                    <img src="../images/fix_consultation.png" alt="Fix consultation">
+                </figure>
+                <div>
+                    <h4>Upload Medical Reports</h4>
+                    <p>This depicts that the user will have to fix appointment first when it selects a particular
+                    doctor.
+                    </p>
+                </div>
+            </li>
+            <li id="item3" class="items"><span>03</span> Consult with doctor</li>
+            <li class="article" id="article3" style="display: none;">
+                <figure>
+                    <img src="../images/fix_consultation.png" alt="Fix consultation">
+                </figure>
+                <div>
+                    <h4>Consult with doctor</h4>
+                    <p>This depicts that the user will have to fix appointment first when it selects a particular
+                    doctor.
+                    </p>
+                </div>
+            </li>
+            <li id="item4" class="items"><span>04</span> Fix Surgery</li>
+            <li class="article" id="article4" style="display: none;">
+                <figure>
+                    <img src="../images/fix_consultation.png" alt="Fix consultation">
+                </figure>
+                <div>
+                    <h4> Fix Surgery</h4>
+                    <p>This depicts that the user will have to fix appointment first when it selects a particular
+                    doctor.
+                    </p>
+                </div>
+            </li>
+            <li id="item5" class="items"><span>05</span> Hospital sent estimates</li>
+            <li class="article" id="article5" style="display: none;">
+                <figure>
+                    <img src="../images/fix_consultation.png" alt="Fix consultation">
+                </figure>
+                <div>
+                    <h4> Hospital sent estimates</h4>
+                    <p>This depicts that the user will have to fix appointment first when it selects a particular
+                    doctor.
+                    </p>
+                </div>
+            </li>
+            <li id="item6" class="items"><span>06</span> Payment</li>
+            <li class="article" id="article6" style="display: none;">
+                <figure>
+                    <img src="../images/fix_consultation.png" alt="Fix consultation">
+                </figure>
+                <div>
+                    <h4> Payment</h4>
+                    <p>This depicts that the user will have to fix appointment first when it selects a particular
+                    doctor.
+                    </p>
+                </div>
+            </li>
+            <li id="item7" class="items"><span>07</span> Surgery Completed</li>
+            <li class="article" id="article7" style="display: none;">
+                <figure>
+                    <img src="../images/fix_consultation.png" alt="Fix consultation">
+                </figure>
+                <div>
+                    <h4> Surgery Completed</h4>
+                    <p>This depicts that the user will have to fix appointment first when it selects a particular
+                    doctor.
+                    </p>
+                </div>
+            </li>
+        </div>
+    </section>
+    <section class="world_class_expert_doctors" id="doctors">
+        <h1>World Class Expert Doctors!</h1>
+        <p>
+            The university of Texas Southeastern Medical center has been a long world-renowned reasearch hospital. But
+            until the '80s, you couldn't go there.
+            Now with the addition of Aston Center and Zale Lipshy Hospital, UT is also a mecca for patients.
+        </p>
+        <div class="doctors">
+            <a href="doctorprofile.html">
+                <div>
+                    <figure class="expert_doctor">
+                        <img src="../images/DukeSanson.jpg" alt="Duke Sanson" width="100%">
+                    </figure>
+                    <figcaption class="personalinfo">
+                        <h5>Duke Sanson</h5>
+                        <h6>Neuro Surgeon</h6>
+                        <h6>MBBS, MD, FRCP, MRCP, Fellowship</h6>
+                        <h6>Australia</h6>
+                    </figcaption>
+                </div>
+            </a>
+            <a href="doctorprofile.html">
+                <div>
+                    <figure class="expert_doctor">
+                        <img src="../images/GeorgeaPeter.jpg" alt="Georgea Peter" width="100%">
+                    </figure>
+                    <figcaption class="personalinfo">
+                        <h5>Georgea Peter</h5>
+                        <h6>Breast Cancer Surgeon</h6>
+                        <h6>MBBS, MD, FRCP, MRCP, Fellowship</h6>
+                        <h6>London</h6>
+                    </figcaption>
+                </div>
+            </a>
+            <a href="doctorprofile.html">
+                <div>
+                    <figure class="expert_doctor">
+                        <img src="../images/CharlieMoon.jpg" alt="Charlie Moon" width="100%">
+                    </figure>
+                    <figcaption class="personalinfo">
+                        <h5>Charlie Moon</h5>
+                        <h6>Cardiac Surgeon</h6>
+                        <h6>MBBS, MD, FRCP, MRCP, Fellowship</h6>
+                        <h6>New Delhi, India</h6>
+                    </figcaption>
+                </div>
+            </a>
+            <a href="doctorprofile.html">
+                <div>
+                    <figure class="expert_doctor">
+                        <img src="../images/RoseMoon.jpg" alt="Rose Moon" width="100%">
+                    </figure>
+                    <figcaption class="personalinfo">
+                        <h5>Rose Moon</h5>
+                        <h6>Plastic Surgeon</h6>
+                        <h6>MBBS, MD, FRCP, MRCP, Fellowship</h6>
+                        <h6>Dubai</h6>
+                    </figcaption>
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="Featured_Medical_Treatment" id="treatment">
+        <h1>Featured Medical Treatment</h1>
+        <p>
+            Join the thousands of others who have exercised their rights to quality healthcare at a price you can afford
+        </p>
+        <div class="variety_of_treatements">
+            <figure class="treatment dentistry">
+                <img src="../images/Dentistry.jpg" alt="Dentistry" width="100%">
+                <a href="Dentistry.html">
+                    <figcaption class="treatmentinfo">
+                        <h5>Dentistry</h5>
+                        <h6>50+ Specialists</h6>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="treatment cancer">
+                <img src="../images/cancer.jpg" alt="Cancer" width="100%">
+                <a href="Dentistry.html">
+                    <figcaption class="treatmentinfo">
+                        <h5>Cancer</h5>
+                        <h6>50+ Specialists</h6>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="treatment cardio">
+                <img src="../images/Cardiologictreatment.jpg" alt="Cardiologic treatment" width="100%">
+                <a href="Dentistry.html">
+                    <figcaption class="treatmentinfo">
+                        <h5>Cardiologic Treatment</h5>
+                        <h6>50+ Specialists</h6>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="treatment multiorgan">
+                <img src="../images/MultiorganTransplant.jpg" alt="Multiorgan Transplant" width="100%">
+                <a href="Dentistry.html">
+                    <figcaption class="treatmentinfo">
+                        <h5>Multi Organ Transplant</h5>
+                        <h6>50+ Specialists</h6>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="treatment ortho">
+                <img src="../images/Orthopedicsurgery.jpg" alt="Orthopedic Surgery" width="100%">
+                <a href="Dentistry.html">
+                    <figcaption class="treatmentinfo">
+                        <h5>Orthopedics Surgery</h5>
+                        <h6>50+ Specialists</h6>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="treatment infertility">
+                <img src="../images/infertilitytreatment.jpg" alt="Infertility treatment" width="100%">
+                <a href="Dentistry.html">
+                    <figcaption class="treatmentinfo">
+                        <h5>Infertility treatment</h5>
+                        <h6>50+ Specialists</h6>
+                    </figcaption>
+                </a>
+            </figure>
+        </div>
+    </section>
+    <section class="Exclusive_services" id="exclusiveservice">
+        <h1>Exclusive Services</h1>
+        <p>We want you to be comfortable and thus apart from treating your illness, we provide you other services that
+            you can see</p>
+        <div class="services">
+            <figure>
+                <img src="../images/travel.png">
+                <figcaption>
+                    <h6>TRAVEL</h6>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="../images/food.png">
+                <figcaption>
+                    <h6>FOOD</h6>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="../images/accomodation.png">
+                <figcaption>
+                    <h6>ACCOMODATION</h6>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="../images/lab.png">
+                <figcaption>
+                    <h6>LABS</h6>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="../images/reports.png">
+                <figcaption>
+                    <h6>REPORTS</h6>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="../images/ambulance.png">
+                <figcaption>
+                    <h6>AMBULANCE</h6>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+    <section class="Need_help">
+        <div>
+            <h2>Need Help?</h2>
+            <p>Just let us know, we will be happy to assist you</p>
+        </div>
+        <button class="secondarybutton" onclick="location.href='submitquery.html'">Submit your enquiry</button>
+    </section>
+    <footer>
+        <section class="footerinfo">
+            <div class="links_icon">
+                <img src="../images/footer.png" width="40%">
+                <div class="links">
+                    <a href="doctorlist.html"><li>Doctor</li></a>
+                    <a href="hospitallist.html"><li>Hospital</li>
+                    <a href="contactus.html"><li>Contact Us</li>
+                    <a href="#exclusiveservice"><li>Other services</li></a>
+                    <a href="FAQ.html"><li>FAQs</li></a>
+                </div>
+            </div>
+            <div class="social_links_and_copywright">
+                <div class="social_links">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-google-plus" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </div>
+                <h6>All Rights Reserved. <i class="fa fa-copyright" aria-hidden="true"></i> tvastra 2018</h6>
+            </div>
+        </section>
+    </footer>
+    <script>
+        var e1=document.querySelector("#item1");
+        var e2=document.querySelector("#item2");
+        var e3=document.querySelector("#item3");
+        var e4=document.querySelector("#item4");
+        var e5=document.querySelector("#item5");
+        var e6=document.querySelector("#item6");
+        var e7=document.querySelector("#item7");
+
+        e1.addEventListener("click",highlight,false);
+        e2.addEventListener("click",highlight,false);
+        e3.addEventListener("click",highlight,false);
+        e4.addEventListener("click",highlight,false);
+        e5.addEventListener("click",highlight,false);
+        e6.addEventListener("click",highlight,false);
+        e7.addEventListener("click",highlight,false);
+
+        function highlight(e)
+        {
+            var id= e.target.id;
+            var i=0;
+            for(i=1;i<=7;i++)
+            {
+                var str="item"+String(i);
+                var str_article="article"+String(i);
+                if(str!==id)
+                {
+                    console.log(str);
+                    document.getElementById(str).style.border="1px solid var(--lightgrey)";
+                    document.getElementById(str).style.color="var(--grey)";
+                    document.getElementById(str_article).style.display="none";
+                }
+                else if(str===id){
+                    console.log("Clicked"+str);
+                    document.getElementById(str).style.border="2px solid var(--blue)";
+                    document.getElementById(str).style.color="var(--black)";
+                    document.getElementById(str_article).style.display="block";
+                }
+            }
+        }
+        function menu(){
+            const nav=document.getElementById("nav_bar");
+            if(nav.style.display=="none")
+            {
+                nav.style.display="block";
+            }
+            else
+            {
+                nav.style.display="none";
+            }
+        }
+    </script>
+</body>
+
+</html>

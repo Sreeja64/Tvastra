@@ -1,0 +1,704 @@
+.profile_back, .dentist_back {
+  height: 15rem;
+  background-image: url("../images/contactUs.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile_back h1, .profile_back h6, .dentist_back h1, .dentist_back h6 {
+  color: var(--white);
+  text-align: center;
+}
+
+.profile_back h1, .dentist_back h1 {
+  margin-bottom: 1.2rem;
+}
+
+.profile_back h6, .dentist_back h6 {
+  letter-spacing: 0.02rem;
+}
+
+.dentist_back {
+  background-image: url("../images/dentist_background.jpg");
+}
+
+.dentist_back .gradient {
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--blue)), to(transparent));
+  background-image: linear-gradient(to right, var(--blue), transparent);
+  height: 15rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+section .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1.5px solid var(--grey);
+  padding: 0.8rem 0.5rem;
+}
+
+section .profile h1 {
+  text-align: center;
+}
+
+section .profile figure, section .profile .hospitalprofile {
+  height: 20rem;
+  margin-bottom: 0.8rem;
+}
+
+section .profile figure img, section .profile .hospitalprofile img {
+  height: 100%;
+  width: 100%;
+}
+
+section .profile .hospitalprofile {
+  height: 12rem;
+}
+
+section .profile .profile_content {
+  margin-top: 1.75rem;
+  padding: 1.2rem 0;
+  border-bottom: 2px dashed var(--grey);
+}
+
+section .profile .profile_content h2 {
+  color: var(--blue);
+  margin-left: 2.8rem;
+  position: relative;
+}
+
+section .profile .profile_content h2::before {
+  content: '';
+  position: absolute;
+  top: 0.5rem;
+  left: -3.3rem;
+  height: 0.1rem;
+  width: 2.8rem;
+  background-color: var(--blue);
+}
+
+section .profile .profile_content p {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+section .profile .profile_content .justify_align {
+  text-align: justify;
+}
+
+section .profile .profile_content h6 {
+  position: relative;
+  font-family: "fontawesome","nexa-light";
+  line-height: 1.2rem;
+  margin-top: 1.2rem;
+  margin-left: 1.5rem;
+}
+
+section .profile .profile_content h6::before {
+  position: absolute;
+  left: -1.5rem;
+  top: 0;
+  color: var(--blue);
+}
+
+section .profile .profile_content .location::before {
+  content: '\f041';
+  left: -1.3rem;
+}
+
+section .profile .profile_content .beds::before {
+  content: '\f236 ';
+}
+
+section .profile .without_border {
+  border: none;
+}
+
+section .profile .without_border li {
+  border: 0 solid transparent;
+}
+
+section .profile .figurecontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section .list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--blue);
+  letter-spacing: 0.01rem;
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  border-bottom: 2px dashed var(--grey);
+  position: relative;
+  font-family: "fontawesome","nexa-bold";
+}
+
+section .list li .arrowbutton {
+  font-family: "fontawesome";
+  border: 0.5px solid transparent;
+  padding: 0 0.3rem 0.25rem 0.3rem;
+  border-radius: 50%;
+  background-color: rgba(143, 202, 241, 0.5);
+}
+
+section .list li .arrowbutton i {
+  color: var(--blue);
+  font-size: 0.6rem;
+}
+
+section .list li::before {
+  position: absolute;
+  left: -0.1rem;
+  top: 0.7rem;
+  color: var(--blue);
+}
+
+section .list .building::before {
+  content: '\f0f8';
+}
+
+section .list .award::before {
+  content: '\f091';
+}
+
+section .list .famous_treatment::before {
+  content: '\f0f1 ';
+}
+
+section .list .expertise::before {
+  content: '\f0a3 ';
+}
+
+section .list .star::before {
+  content: '\f005 ';
+}
+
+section .list .clock::before {
+  content: '\f017 ';
+}
+
+section .list .money::before {
+  content: '\f156 ';
+  left: 0.095rem;
+}
+
+section .list .membership::before {
+  content: '\f2c2 ';
+}
+
+section .list .location::before {
+  content: '\f041 ';
+  left: 0.095rem;
+}
+
+section .list .doctors::before {
+  content: '\f0f0 ';
+}
+
+section .list .packages::before {
+  content: '\f0fd ';
+}
+
+section .without_border {
+  border: none;
+}
+
+section .without_border li {
+  border: 0 solid transparent;
+}
+
+section .icons_no_border li {
+  border: 0 solid transparent;
+}
+
+section .icons_no_border li::before {
+  position: absolute;
+  left: -0.1rem;
+  top: 0.54rem;
+  color: var(--blue);
+}
+
+section .icons_no_border article {
+  padding: 0.5rem 0;
+}
+
+section .without_icons li {
+  padding-left: 0;
+}
+
+section .dentistry h1 {
+  margin-bottom: 1.5rem;
+}
+
+section .dentistry figure {
+  height: 18rem;
+  margin-bottom: 0.5rem;
+}
+
+section .dentistry .profile_content {
+  margin-top: 0;
+}
+
+section .dentistry .profile_content p {
+  text-align: justify;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+section .dentistry .profile_content li {
+  color: var(--navyblue);
+  font-family: "fontawesome","nexa-light";
+  margin-left: 1rem;
+  position: relative;
+}
+
+section .dentistry .profile_content li:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+
+section .dentistry .profile_content li::before {
+  content: '\f111';
+  position: absolute;
+  left: -1rem;
+  top: 0.25rem;
+  color: var(--blue);
+  font-size: 0.35rem;
+}
+
+section .without_border {
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+section .disorders {
+  padding-bottom: 2.8rem;
+}
+
+section .disorders .disorder:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+section .disorders .disorder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .disorders .disorder figure {
+  background-color: rgba(143, 202, 241, 0.5);
+  border-radius: 100%;
+  padding: 1rem 1.2rem;
+}
+
+section .disorders .disorder figure i {
+  font-size: 1.5rem;
+}
+
+section .disorders .disorder h4 {
+  margin: 0.75rem 0;
+}
+
+section .disorders .disorder p {
+  font-size: 0.7rem;
+}
+
+section .details {
+  padding: 1.2rem;
+  border: 2px solid var(--lightgrey);
+  border-radius: 0.5rem;
+}
+
+section .details h5 {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+section .details h5::before {
+  content: '';
+  position: absolute;
+  top: 0.4rem;
+  left: -1.2rem;
+  height: 0.1rem;
+  width: 1rem;
+  background-color: var(--blue);
+}
+
+section .details li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+section .details li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid var(--lightgrey);
+}
+
+section .details li .value, section .details li .item {
+  color: var(--grey);
+  font-size: 0.9rem;
+}
+
+section .details li .item {
+  color: var(--navyblue);
+}
+
+section .details:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .profile_back {
+    background-image: url("../images/contactUs.png");
+  }
+  .dentist_back {
+    background-image: url("../images/dentist_background.jpg");
+  }
+  .dentist_back .gradient {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--blue)), to(transparent));
+    background-image: linear-gradient(to right, var(--blue), transparent);
+    height: 15rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section {
+    padding: 1.5rem 1.5rem;
+  }
+  section .profile {
+    padding: 1rem 1rem;
+  }
+  section .profile .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section .profile .container .profile_content {
+    width: 70%;
+    padding: 0;
+    margin-top: 0;
+    margin-right: 2rem;
+  }
+  section .profile .container .profile_content h2 {
+    margin-left: 0;
+  }
+  section .profile .container .profile_content h2::before {
+    left: -1.05rem;
+    width: 1rem;
+  }
+  section .profile .container .profile_content .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section .profile .container .profile_content .info .location {
+    width: 50%;
+  }
+  section .profile .container .profile_content .info .location::before {
+    top: 0.7rem;
+  }
+  section .profile .container .profile_content .info .bed {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  section .profile .container .figurecontainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 10rem;
+  }
+  section .list {
+    width: 60%;
+    margin-top: 1rem;
+  }
+  section .list li {
+    padding: 0.75rem 0;
+    padding-left: 2rem;
+    font-size: 1.1rem;
+  }
+  section .list li:before {
+    top: 0.8rem;
+    font-size: 1rem;
+  }
+  section .without_icons li {
+    padding-left: 0;
+  }
+  section .faq {
+    width: 100%;
+  }
+  section .dentistry {
+    padding: 0;
+  }
+  section .dentistry h1 {
+    text-align: left;
+    margin-bottom: 1.5rem;
+  }
+  section .dentistry .flex_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section .dentistry .flex_container .profile_content {
+    width: 70%;
+    padding: 0;
+    margin-left: 2rem;
+  }
+  section .dentistry .flex_container figure {
+    margin-bottom: 0;
+    height: 20rem;
+  }
+  section .disorders {
+    margin-top: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  section .disorders .disorder h4 {
+    font-size: 1rem;
+  }
+  section .disorders .disorder:not(:last-child) {
+    margin-bottom: 0;
+  }
+  section .detail_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  section .detail_container .details {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+  }
+  section .detail_container .details:not(:last-child) {
+    margin: 0;
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .profile_back {
+    background-image: url("../images/contactUs.png");
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    padding-left: 5rem;
+  }
+  .profile_back .content h6 {
+    text-align: left;
+  }
+  .dentist_back {
+    background-image: url("../images/dentist_background.jpg");
+    padding-left: 0;
+  }
+  .dentist_back .gradient {
+    background-image: -webkit-gradient(linear, left top, right top, from(var(--blue)), to(transparent));
+    background-image: linear-gradient(to right, var(--blue), transparent);
+    height: 15rem;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 5rem;
+  }
+  section {
+    padding: 1.5rem 5rem;
+  }
+  section .profile {
+    padding: 2rem 2rem;
+  }
+  section .profile .container .profile_content {
+    width: 75%;
+  }
+  section .profile .container .profile_content h2 {
+    margin-left: 0;
+  }
+  section .profile .container .profile_content h2::before {
+    left: -2rem;
+    width: 1.6rem;
+  }
+  section .profile .container .profile_content .info {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  section .profile .container .profile_content .info .location {
+    width: 50%;
+  }
+  section .profile .container .profile_content .info .location::before {
+    top: 0;
+  }
+  section .list {
+    width: 50%;
+    margin-top: 1rem;
+  }
+  section .list article {
+    padding: 1rem 0;
+  }
+  section .list article p {
+    text-align: left;
+    font-size: 1rem;
+  }
+  section .list li {
+    font-size: 1.4rem;
+  }
+  section .list li::before {
+    font-size: 1.2rem;
+  }
+  section .without_icons li {
+    padding-left: 0;
+  }
+  section .faq {
+    width: 100%;
+  }
+  .dentist {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 2rem 5rem;
+  }
+  .dentist .left_container {
+    margin-right: 2rem;
+  }
+  .dentist .left_container .dentistry {
+    padding: 0;
+  }
+  .dentist .left_container .dentistry .profile_content li {
+    font-size: 1.05rem;
+  }
+  .dentist .left_container .disorders {
+    margin-top: 2.5rem;
+    padding: 0;
+  }
+  .dentist .left_container .disorders .disorder h4 {
+    font-size: 1.2rem;
+  }
+  .dentist .left_container .disorders .disorder p {
+    font-size: 1rem;
+  }
+  .dentist .left_container .disorders .disorder:not(:last-child) {
+    margin: 0;
+    margin-right: 2rem;
+  }
+  .dentist .detail_container {
+    display: block;
+  }
+  .dentist .detail_container .details {
+    width: 20rem;
+  }
+  .dentist .detail_container .details .item, .dentist .detail_container .details .value {
+    font-size: 0.9rem;
+    margin-left: 1rem;
+  }
+  .dentist .detail_container .details:not(:last-child) {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+}
+/*# sourceMappingURL=style_doctorprofile.css.map */

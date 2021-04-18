@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css" type="text/css">
+    <link rel="stylesheet" href="../css/theme.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="../css/style_login.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+    <nav>
+        <figure>
+            <a href="index.html"><img src="../images/Logo.jpg"></a>
+        </figure>
+            <div class="menubar">
+                <i class="fa fa-bars" aria-hidden="true" onclick="menu()" id="bars"></i>
+                <ul class="nav_bar" id="nav_bar">
+                <li><a href="doctorlist.html">Doctor</a></li>
+                <li><a href="hospitallist.html">Hospitals</a></li>
+                <ul class="treatment_menu">
+                    <li><a>Treatment</a></li>
+                    <ul class="treatments">
+                        <li><a href="Dentistry.html">Dentistry</a></li>
+                        <li><a href="Dentistry.html">Cardiology</a></li>
+                        <li><a href="Dentistry.html">Cancer</a></li>
+                        <li><a href="Dentistry.html">Multiorgan</a></li>
+                        <li><a href="Dentistry.html">Orthopedic</a></li>
+                        <li><a href="Dentistry.html">Infertility</a></li>
+                    </ul>
+                </ul>
+                <li><a href="#exclusiveservice">Other Services</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                </ul>
+            </div>
+        <div class="header_buttons">
+            <button class="tertiarybutton" onclick="location.href='login.html';">Login / Sign Up</button>
+            <button class="primarybutton">Get a Quote</button>
+        </div>
+    </nav>
+    <main>
+        <section class="login_container">
+            <div class="heading">
+                <h3>Sign Up</h3>
+            </div>
+            <div class="formcontainer">
+                <form class="signupform">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <input type="password" placeholder="Enter Password">
+                    <select class="grey">
+                        <option>Select your gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <input type="date" class="grey">
+                    <input type="tel" placeholder="Enter Phone Number">
+                    <div class="location_input">
+                        <input type="text" placeholder="Enter City">
+                        <input type="text" placeholder="Enter State">
+                    </div>
+                    <select class="grey">
+                        <option>Select your country</option>
+                        <option value="India">India</option>
+                        <option value="United States">United States</option>
+                        <option value="Germany">Germany</option>
+                    </select>
+                    <button class="primarybutton">SIGN UP</button>
+                </form>
+            </div>
+            <h6>Already Registered? <a href="login.html">Login</a></h6>
+        </section>
+    </main>
+    <footer>
+        <h6>All Rights Reserved. <i class="fa fa-copyright" aria-hidden="true"></i> tvastra 2018</h6>
+    </footer>
+    <script>
+        function menu(){
+            const nav=document.getElementById("nav_bar");
+            if(nav.style.display=="none")
+            {
+                nav.style.display="block";
+            }
+            else
+            {
+                nav.style.display="none";
+            }
+        }
+    </script>
+</body>
+</html>

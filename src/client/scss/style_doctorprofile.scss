@@ -1,0 +1,601 @@
+.profile_back, .dentist_back
+{
+    height: 15rem;
+    background-image: url("../images/contactUs.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h1,h6{
+        color: var(--white);
+        text-align: center;
+    }
+    h1{
+        margin-bottom: 1.2rem;
+    }
+    h6{
+        letter-spacing: 0.02rem;
+    }
+}
+.dentist_back
+{
+    background-image: url("../images/dentist_background.jpg");
+    .gradient{
+        background-image: linear-gradient(to right,var(--blue),transparent);
+        height: 15rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+section
+{
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    .profile
+    {
+        display: flex;
+        flex-direction: column;
+        border: 1.5px solid var(--grey);
+        padding: 0.8rem 0.5rem;
+        h1{
+            text-align: center;
+        }
+        figure,.hospitalprofile{
+            height: 20rem;
+            margin-bottom: 0.8rem;
+            img{
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .hospitalprofile{
+            height: 12rem;
+        }
+        .profile_content
+        {
+            margin-top: 1.75rem;
+            padding: 1.2rem 0;
+            border-bottom: 2px dashed var(--grey);
+            h2{
+                color: var(--blue);
+                margin-left: 2.8rem;
+                position: relative;
+            }
+            h2::before{
+                content: '';
+                position: absolute;
+                top: 0.5rem;
+                left: -3.3rem;
+                height: 0.1rem;
+                width: 2.8rem;
+                background-color: var(--blue);
+            }
+            p{
+                margin-top: 1rem;
+                text-align: center;
+            }
+            .justify_align{
+                text-align: justify;
+            }
+            h6{
+                position: relative;
+                font-family: "fontawesome","nexa-light";
+                line-height: 1.2rem;
+                margin-top: 1.2rem;
+                margin-left: 1.5rem;
+            }
+            h6::before{
+                position: absolute;
+                left: -1.5rem;
+                top: 0;
+                color: var(--blue);
+            } 
+            .location::before{
+                content: '\f041';
+                left: -1.3rem;
+            } 
+            .beds::before{
+                content: '\f236 ';
+            }
+        }
+        .without_border
+        {
+            li
+            {
+                border: 0 solid transparent;
+            }
+            border: none;
+        }
+        .figurecontainer{
+            display: flex;
+            flex-direction: column;
+        }
+        
+    }
+    .list
+        {
+            li{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                color: var(--blue);
+                letter-spacing: 0.01rem;
+                padding: 0.5rem 0;
+                padding-left: 1.5rem;
+                border-bottom: 2px dashed var(--grey);
+                position: relative;
+                font-family: "fontawesome","nexa-bold";
+                .arrowbutton{
+                    font-family: "fontawesome";
+                    border: 0.5px solid transparent;
+                    padding: 0 0.3rem 0.25rem 0.3rem;
+                    border-radius: 50%;
+                    background-color: rgba(143,202,241,0.5);
+                    i{
+                        color: var(--blue);
+                        font-size: 0.6rem;
+                    }
+                }
+            } 
+            li::before{
+                    position: absolute;
+                    left: -0.1rem;
+                    top: 0.7rem;
+                    color: var(--blue);
+                }  
+                .building::before
+                {
+                    content: '\f0f8';
+                }
+                .award::before{
+                    content: '\f091';
+                }
+                .famous_treatment::before{
+                    content: '\f0f1 ';
+                }
+                .expertise::before{
+                    content: '\f0a3 ';
+                }
+                .star::before{
+                    content: '\f005 ';
+                }
+                .clock::before{
+                    content: '\f017 ';
+                }
+                .money::before{
+                    content: '\f156 ';
+                    left: 0.095rem;
+                }
+                .membership::before{
+                    content: '\f2c2 ';
+                }
+                .location::before{
+                    content: '\f041 ';
+                    left: 0.095rem;
+                }
+                .doctors::before{
+                    content: '\f0f0 ';
+                }
+                .packages::before{
+                    content: '\f0fd ';
+                }
+        }
+    .without_border
+    {
+        li
+        {
+            border: 0 solid transparent;
+        }
+        border: none;
+    }
+        
+    .icons_no_border
+    {
+        li
+        {
+            border: 0 solid transparent;
+        }
+            
+        li::before
+        {
+            position: absolute;
+            left: -0.1rem;
+            top: 0.54rem;
+            color: var(--blue);
+        } 
+        article{
+            padding: 0.5rem 0;
+        }
+    }
+    .without_icons
+    {
+        li{
+            padding-left: 0;
+        }
+    }
+    .dentistry
+    {
+        h1{
+            margin-bottom: 1.5rem;
+        }
+        figure{
+            height: 18rem;
+            margin-bottom: 0.5rem;
+        }
+        .profile_content{
+            margin-top: 0;
+            p{
+                text-align: justify;
+                margin-top: 1.5rem;
+                margin-bottom: 1rem;
+            }
+            li{
+                color: var(--navyblue);
+                font-family: "fontawesome","nexa-light";
+                margin-left: 1rem;
+                position: relative;
+            }
+            li:not(:last-child){
+                margin-bottom: 0.8rem;
+            }
+            li::before{
+                content: '\f111';
+                position: absolute;
+                left: -1rem;
+                top: 0.25rem;
+                color: var(--blue);
+                font-size: 0.35rem;
+            } 
+        }
+           
+    }
+    .without_border{
+        border: none;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .disorders{
+        padding-bottom: 2.8rem;
+        .disorder:not(:last-child){
+            margin-bottom: 1.5rem;
+        }
+        .disorder{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            figure{
+                background-color: rgba(143,202,241,0.5);
+                border-radius: 100%;
+                padding: 1rem 1.2rem;
+                i{
+                    font-size: 1.5rem;
+                }
+            }
+            h4{
+                margin: 0.75rem 0;
+            }
+            p{
+                font-size: 0.7rem;
+            }
+        }
+    }
+    .details
+    {
+        padding: 1.2rem;
+        border: 2px solid var(--lightgrey);
+        border-radius: 0.5rem;
+        h5{
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        h5::before{
+            content: '';
+            position: absolute;
+            top: 0.4rem;
+            left: -1.2rem;
+            height: 0.1rem;
+            width: 1rem;
+            background-color: var(--blue);
+        }
+        li:not(:last-child){
+            margin-bottom: 1rem;
+        }
+        li{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 0.35rem;
+            border-bottom: 1px solid var(--lightgrey);
+            .value,.item{
+                color: var(--grey);
+                font-size: 0.9rem;
+            }
+            .item{
+                color: var(--navyblue);
+            }
+        }
+    }
+    .details:not(:last-child)
+    {
+        margin-bottom: 1rem;
+    }
+}
+@media screen and (min-width:768px) 
+{
+    .profile_back{
+        background-image: url("../images/contactUs.png");
+    }
+    .dentist_back
+    {
+        background-image: url("../images/dentist_background.jpg");
+        .gradient{
+            background-image: linear-gradient(to right,var(--blue),transparent);
+            height: 15rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    section
+    {
+        padding: 1.5rem 1.5rem;
+        .profile
+        {
+            padding: 1rem 1rem;
+            .container
+            {
+                display: flex;
+                flex-direction:row-reverse;
+                justify-content: space-between;
+                .profile_content{
+                    width: 70%;
+                    padding: 0;
+                    margin-top: 0;
+                    margin-right: 2rem;
+                    h2{
+                        margin-left: 0;
+                    }
+                    h2::before{
+                        left: -1.05rem;
+                        width: 1rem;
+                    }
+                    .info{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .location{
+                            width: 50%;
+                        }
+                        .location::before{
+                            top: 0.7rem;
+                        }
+                        .bed{
+                            flex-grow: 1;
+                        }
+                    }
+                }
+                .figurecontainer
+                {
+                    display: flex;
+                    flex-direction: column;
+                    height: 10rem;
+                }
+            }
+        }
+        .list
+        {
+            width: 60%;
+            margin-top: 1rem;
+            li
+            {
+                padding: 0.75rem 0;
+                padding-left: 2rem;
+                font-size: 1.1rem;
+            }
+            li:before
+            {
+                top: 0.8rem;
+                font-size: 1rem;
+            }
+        }
+        .without_icons
+        {
+            li{
+                padding-left: 0;
+            }
+        }
+        .faq{
+            width: 100%;
+        }
+        .dentistry{
+            padding: 0;
+            h1{
+                text-align: left;
+                margin-bottom: 1.5rem;
+            }
+            .flex_container{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .profile_content{
+                    width: 70%;
+                    padding: 0;
+                    margin-left: 2rem;
+                }
+                figure{
+                    margin-bottom: 0;
+                    height: 20rem;
+                }
+            }
+        }
+        .disorders{
+            margin-top: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .disorder{
+                h4{
+                    font-size: 1rem;
+                }
+            }
+            .disorder:not(:last-child){
+                margin-bottom: 0;
+            }
+        }
+        .detail_container{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            .details{
+                flex-grow: 1;
+            }
+            .details:not(:last-child){
+                margin:0;
+                margin-right: 2rem;
+            }
+        }
+    }
+    
+}
+@media screen and (min-width:1025px) 
+{
+    .profile_back{
+        background-image: url("../images/contactUs.png");
+        justify-content: left;
+        padding-left: 5rem;
+        .content
+        {
+            h6{
+                text-align: left;
+            }
+        }
+    }
+    .dentist_back
+    {
+        background-image: url("../images/dentist_background.jpg");
+        padding-left: 0;
+        .gradient{
+            background-image: linear-gradient(to right,var(--blue),transparent);
+            height: 15rem;
+            width: 100%;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            padding-left: 5rem;
+        }
+    }
+    section
+    {
+        padding: 1.5rem 5rem;
+        .profile
+        {
+            padding: 2rem 2rem;
+            .container
+            {
+                .profile_content{
+                    width: 75%;
+                    h2{
+                        margin-left: 0;
+                    }
+                    h2::before{
+                        left: -2rem;
+                        width: 1.6rem;
+                    }
+                    .info{
+                        justify-content: left;
+                        .location{
+                            width: 50%;
+                        }
+                        .location::before{
+                            top: 0;
+                        }
+                    }
+                }
+            }
+        }
+        .list
+        {
+            width: 50%;
+            margin-top: 1rem;
+            article
+            {
+                padding: 1rem 0;
+                p{
+                    text-align: left;
+                    font-size: 1rem;
+                }
+            }
+            li{
+                font-size: 1.4rem;
+            }
+            li::before{
+                font-size: 1.2rem;
+            }
+        }
+        .without_icons
+        {
+            li{
+                padding-left: 0;
+            }
+        }
+        .faq
+        {
+            width: 100%;
+        }
+    }
+    .dentist
+    {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 5rem;
+        .left_container
+        {
+            margin-right: 2rem;
+            .dentistry{
+                padding: 0;
+                .profile_content{
+                    li{
+                        font-size: 1.05rem;
+                    }
+                }
+            }
+            .disorders{
+                margin-top: 2.5rem;
+                padding: 0;
+                .disorder{
+                    h4
+                    {
+                        font-size: 1.2rem;
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+                .disorder:not(:last-child){
+                    margin: 0;
+                    margin-right: 2rem;
+                }
+            }
+        }
+        .detail_container{
+            display: block;
+            .details{
+                width: 20rem;
+                .item, .value{
+                    font-size: 0.9rem;
+                    margin-left: 1rem;
+                }
+            }
+            .details:not(:last-child)
+            {
+                margin: 0;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
