@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="../css/theme.css">
     <link rel="stylesheet" href="../css/style.css" type="text/css">
     <link rel="stylesheet" href="../css/style_doctorprofile.css" type="text/css">
-    <link rel="stylesheet" href="../css/style_contact_us.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
     <nav>
         <figure>
-            <a href="index.html"><img src="../images/Logo.jpg"></a>
+            <a href="../index.html"><img src="../images/Logo.jpg"></a>
         </figure>
             <div class="menubar">
                 <i class="fa fa-bars" aria-hidden="true" onclick="menu()" id="bars"></i>
@@ -44,90 +43,42 @@
     </nav>
     <figure class="profile_back">
         <div class="content">
-            <h1>Contact Us</h1>
-            <h6>Home / Contact Us</h6>
+            <h1>FAQ</h1>
+            <h6>Home / FAQ</h6>
         </div>
     </figure>
     <section>
-        <div class="map">
-            <iframe scrolling="no" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Sector%2045%20noida+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed" ></iframe>
-            <div></div>
-        </div>
-        <div class="contact_info">
-            <div class="info">
-                <div class="icon">
-                    <i class="fa fa-hospital-o" aria-hidden="true"></i>
-                </div>
-                <div class="values">
-                    <h5>Noida, India</h5>
-                    <h6>Sector 45</h6>
-                </div>
-            </div>
-            <div class="info">
-                <div class="icon">
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                </div>
-                <div class="values">
-                    <h5>00 (440) 9865 562</h5>
-                    <h6>Mon to Fri 09:00 am to 06:00 pm</h6>
-                </div>
-            </div>
-            <div class="info">
-                <div class="icon">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                </div>
-                <div class="values">
-                    <h5>support@tvastra.com</h5>
-                    <h6>Send us your query anytime!</h6>
-                </div>
-            </div>
-        </div>
+            <ul class="faq list without_border without_icons">
+                <li>How do I make payments?<button class="arrowbutton"><i class="fa fa-chevron-up" aria-hidden="true"></i>
+                </i>
+                </button></li>
+                <li>There is not enough money in my Portea wallet for making a payment. What do I do?<button class="arrowbutton"><i class="fa fa-chevron-up" aria-hidden="true"></i>
+                </i>
+                </button></li>
+                
+                <li>Can I transfer the balance of my Portea wallet to another user?<button class="arrowbutton"><i class="fa fa-chevron-up" aria-hidden="true"></i>
+
+                </button></li>
+                <li>Is Portea money same as Portea wallet?<button class="arrowbutton"><i class="fa fa-chevron-up" aria-hidden="true"></i>
+
+                </button></li>
+                <li>Refund<button class="arrowbutton"><i class="fa fa-chevron-up" aria-hidden="true"></i>
+
+                </button></li>
+                <li>What is a Family ID?<button class="arrowbutton"><i class="fa fa-chevron-up" aria-hidden="true"></i>
+
+                </button></li>
+                <li>Who can be added as Family?<button class="arrowbutton"><i class="fa fa-chevron-up" aria-hidden="true"></i>
+
+                </button></li>
+            </ul>
     </section>
-    <section class="message_form_container">
-        <div class="contact_info">
-            <div class="info">
-                <div class="icon">
-                    <i class="fa fa-hospital-o" aria-hidden="true"></i>
-                </div>
-                <div class="values">
-                    <h5>Noida, India</h5>
-                    <h6>Sector 45</h6>
-                </div>
-            </div>
-            <div class="info">
-                <div class="icon">
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                </div>
-                <div class="values">
-                    <h5>00 (440) 9865 562</h5>
-                    <h6>Mon to Fri 09:00 am to 06:00 pm</h6>
-                </div>
-            </div>
-            <div class="info">
-                <div class="icon">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                </div>
-                <div class="values">
-                    <h5>support@tvastra.com</h5>
-                    <h6>Send us your query anytime!</h6>
-                </div>
-            </div>
+    <section class="Need_help">
+        <div>
+            <h2>Need Help?</h2>
+            <p>Just let us know, we will be happy to assist you</p>
         </div>
-        <div class="form_container">
-            <form>
-                <div>    
-                    <input type="text" placeholder="Enter your name">
-                    <input type="email" placeholder="Enter email address">
-                    <input type="text" placeholder="Enter subject">
-                </div>
-                <div>
-                    <input type="text" placeholder="Enter message">
-                </div>
-            </form>
-            <div class="button_container">
-                <button class="secondarybutton">Send Message</button>
-            </div>
-        </div>
+        <button class="secondarybutton" onclick="location.href='submitquery.html'">Submit your enquiry</button>
     </section>
     <footer>
         <section class="footerinfo">

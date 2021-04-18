@@ -13,7 +13,7 @@
 <body>
     <nav>
         <figure>
-            <a href="index.html"><img src="../images/Logo.jpg"></a>
+            <a href="../index.html"><img src="../images/Logo.jpg"></a>
         </figure>
             <div class="menubar">
                 <i class="fa fa-bars" aria-hidden="true" onclick="menu()" id="bars"></i>
@@ -40,23 +40,23 @@
             <button class="primarybutton">Get a Quote</button>
         </div>
     </nav>
-        <figure class="groupdoctor">
-            <div class="blue">
-                <h1>Cardiac Surgeon in <span>Delhi</span></h1>
-            </div>
-        </figure>
+    <figure class="hospitalbackground">
+        <div class="blue">
+            <h1>Hospitals in <span>Delhi</span></h1>
+        </div>
+    </figure>
 
     <section class="heading">
-        <h3>Home/Doctor List</h3>
+        <h3>Home/Hospital List</h3>
         <select name="features">
             <option>Sort by</option>
-            <option value="Experience">Experience</option>
+            <option value="Expenditure">Expenditure</option>
             <option value="Ratings">Ratings</option>
             <option value="Alphabetically">Alphabetically</option>
         </select>
     </section>
     <section class="various_hospitals">
-        <div class="left_container">
+        <div class="left_container_hospital">
             <h5>Filter By</h5>
             <div class="filters">
                 <div class="filter_heading">
@@ -75,16 +75,16 @@
             </div>
             <div class="filters">
                 <div class="filter_heading">
-                    <h5>Hospitals</h5>
+                    <h5>Department</h5>
                     <div><i class="fa fa-search" aria-hidden="true"></i></div>
                 </div>
                 <div class="filter_subheading">
-                    <div><input type="checkbox"><label>Apollo Hospital</label></div>
-                    <div><input type="checkbox"><label>Manipal North Side Hospital</label></div>
-                    <div><input type="checkbox"><label>Northstar</label></div>
-                    <div><input type="checkbox"><label>AIIMS</label></div>
-                    <div><input type="checkbox"><label>Fortis Hospitals</label></div>
-                    <div><input type="checkbox"><label>Elbit Diagonistics</label></div>
+                    <div><input type="checkbox"><label>Department 1</label></div>
+                    <div><input type="checkbox"><label>Department 2</label></div>
+                    <div><input type="checkbox"><label>Department 3</label></div>
+                    <div><input type="checkbox"><label>Department 4</label></div>
+                    <div><input type="checkbox"><label>Department 5</label></div>
+                    <div><input type="checkbox"><label>Department 6</label></div>
                     <button class="showmore">+ Show More</button>
                 </div>
             </div>
@@ -103,129 +103,106 @@
                     <button class="showmore">+ Show More</button>
                 </div>
             </div>
-            <div class="filters">
-                <div class="filter_heading">
-                    <h5>Years of Experience</h5>
-                    <div><i class="fa fa-search" aria-hidden="true"></i></div>
-                </div>
-                <div class="filter_subheading">
-                    <div><input type="checkbox"><label>30+</label></div>
-                    <div><input type="checkbox"><label>25+</label></div>
-                    <div><input type="checkbox"><label>20+</label></div>
-                    <div><input type="checkbox"><label>15+</label></div>
-                    <div><input type="checkbox"><label>10+</label></div>
-                    <div><input type="checkbox"><label>5+</label></div>
-                    <button class="showmore">+ Show More</button>
-                </div>
-            </div>
         </div>
-        <div class="right_container">
-            <div class="card">
+        <div class="right_container_hospital">
+            <div class=" hospital  card">
                 <div class="info">
-                    <a href="doctorprofile.html"><h3>Deep Chandra Verma</h3></a>
+                    <a href="hospital_profile.html"><h3>Apollo Hospital</h3></a>
                     <ul class="personal_info">
-                        <li class="expertise">abc</li>
-                        <li class="degree">abc</li>
-                        <li class="clock">abc</li>
-                        <li class="building">abc</li>
-                        <li class="location">abc</li>
+                        <li class="location">Delhi Mathura Road, Sarita Vihar, Delhi 110076</li>
+                        <li class="bed">100 beds</li>
+                        <li class="famous_treatment">Famous Treatments</li>
+                    </ul>
+                    <ul class="hospital_features">
+                        <li>Multiorgan Transplant</li>
+                        <li>Orthopedic Surgery</li>
+                        <li>Infertility Treatment</li>
+                        <li>Dentistry</li>
+                        <li>Cardiology</li>
+                        <li>Cancer</li>
+                        <li>+ 40 more</li>
                     </ul>
                 </div>
                 <div class="button_container">
-                    <button class="primarybutton" onclick="location.href='bookappointment.html';">Book an appointment</button>
+                    <button class="primarybutton">Call Now</button>
                 </div>
-                <figure>
-                    <img src="../images/DukeSanson.jpg">
+                <figure class="hospitalfigure">
+                    <img src="../images/hospital1.jpg">
                 </figure>
             </div>
-            <div class="card">
+            <div class=" hospital  card">
                 <div class="info">
-                    <a href="doctorprofile.html"><h3>Charlie Moon</h3></a>
+                    <a href="hospital_profile.html"><h3>Fortis Hospital</h3></a>
                     <ul class="personal_info">
-                        <li class="expertise">abc</li>
-                        <li class="degree">abc</li>
-                        <li class="clock">abc</li>
-                        <li class="building">abc</li>
-                        <li class="location">abc</li>
+                        <li class="location">Delhi Mathura Road, Sarita Vihar, Delhi 110076</li>
+                        <li class="bed">100 beds</li>
+                        <li class="famous_treatment">Famous Treatments</li>
+                    </ul>
+                    <ul class="hospital_features">
+                        <li>Multiorgan Transplant</li>
+                        <li>Orthopedic Surgery</li>
+                        <li>Infertility Treatment</li>
+                        <li>Dentistry</li>
+                        <li>Cardiology</li>
+                        <li>Cancer</li>
+                        <li>+ 40 more</li>
                     </ul>
                 </div>
                 <div class="button_container">
-                    <button class="primarybutton" onclick="location.href='bookappointment.html';">Book an appointment</button>
+                    <button class="primarybutton">Call Now</button>
                 </div>
-                <figure>
-                    <img src="../images/CharlieMoon.jpg">
+                <figure class="hospitalfigure">
+                    <img src="../images/hospital2.jpg">
                 </figure>
             </div>
-            <div class="card">
+            <div class=" hospital  card">
                 <div class="info">
-                    <a href="doctorprofile.html"><h3>Rose Moon</h3></a>
+                    <a href="hospital_profile.html"><h3>Rockland Hospital</h3></a>
                     <ul class="personal_info">
-                        <li class="expertise">abc</li>
-                        <li class="degree">abc</li>
-                        <li class="clock">abc</li>
-                        <li class="building">abc</li>
-                        <li class="location">abc</li>
+                        <li class="location">Delhi Mathura Road, Sarita Vihar, Delhi 110076</li>
+                        <li class="bed">100 beds</li>
+                        <li class="famous_treatment">Famous Treatments</li>
+                    </ul>
+                    <ul class="hospital_features">
+                        <li>Multiorgan Transplant</li>
+                        <li>Orthopedic Surgery</li>
+                        <li>Infertility Treatment</li>
+                        <li>Dentistry</li>
+                        <li>Cardiology</li>
+                        <li>Cancer</li>
+                        <li>+ 40 more</li>
                     </ul>
                 </div>
                 <div class="button_container">
-                    <button class="primarybutton" onclick="location.href='bookappointment.html';">Book an appointment</button>
+                    <button class="primarybutton">Call Now</button>
                 </div>
-                <figure>
-                    <img src="../images/RoseMoon.jpg">
+                <figure class="hospitalfigure">
+                    <img src="../images/hospital3.jpg">
                 </figure>
             </div>
-            <div class="card">
+            <div class=" hospital  card">
                 <div class="info">
-                    <a href="doctorprofile.html"><h3>Georgea Peter</h3></a>
+                    <a href="hospital_profile.html"><h3>Primus Super Speciality Hospital</h3></a>
                     <ul class="personal_info">
-                        <li class="expertise">abc</li>
-                        <li class="degree">abc</li>
-                        <li class="clock">abc</li>
-                        <li class="building">abc</li>
-                        <li class="location">abc</li>
+                        <li class="location">Delhi Mathura Road, Sarita Vihar, Delhi 110076</li>
+                        <li class="bed">100 beds</li>
+                        <li class="famous_treatment">Famous Treatments</li>
+                    </ul>
+                    <ul class="hospital_features">
+                        <li>Multiorgan Transplant</li>
+                        <li>Orthopedic Surgery</li>
+                        <li>Infertility Treatment</li>
+                        <li>Dentistry</li>
+                        <li>Cardiology</li>
+                        <li>Cancer</li>
+                        <li>+ 40 more</li>
                     </ul>
                 </div>
                 <div class="button_container">
-                    <button class="primarybutton" onclick="location.href='bookappointment.html';">Book an appointment</button>
+                    <button class="primarybutton">Call Now</button>
                 </div>
-                <figure>
-                    <img src="../images/GeorgeaPeter.jpg">
-                </figure>
-            </div>
-            <div class="card">
-                <div class="info">
-                    <a href="doctorprofile.html"><h3>Deep Chandra Verma</h3></a>
-                    <ul class="personal_info">
-                        <li class="expertise">abc</li>
-                        <li class="degree">abc</li>
-                        <li class="clock">abc</li>
-                        <li class="building">abc</li>
-                        <li class="location">abc</li>
-                    </ul>
-                </div>
-                <div class="button_container">
-                    <button class="primarybutton" onclick="location.href='bookappointment.html';">Book an appointment</button>
-                </div>
-                <figure>
-                    <img src="../images/DukeSanson.jpg">
-                </figure>
-            </div>
-            <div class="card">
-                <div class="info">
-                    <a href="doctorprofile.html"><h3>Charlie Moon</h3></a>
-                    <ul class="personal_info">
-                        <li class="expertise">abc</li>
-                        <li class="degree">abc</li>
-                        <li class="clock">abc</li>
-                        <li class="building">abc</li>
-                        <li class="location">abc</li>
-                    </ul>
-                </div>
-                <div class="button_container">
-                    <button class="primarybutton" onclick="location.href='bookappointment.html';">Book an appointment</button>
-                </div>
-                <figure>
-                    <img src="../images/CharlieMoon.jpg">
+                <figure class="hospitalfigure">
+                    <img src="../images/hospital4.jpg">
                 </figure>
             </div>
         </div>

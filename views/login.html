@@ -12,7 +12,7 @@
 <body>
     <nav>
         <figure>
-            <a href="index.html"><img src="../images/Logo.jpg"></a>
+            <a href="../index.html"><img src="../images/Logo.jpg"></a>
         </figure>
             <div class="menubar">
                 <i class="fa fa-bars" aria-hidden="true" onclick="menu()" id="bars"></i>
@@ -42,39 +42,19 @@
     <main>
         <section class="login_container">
             <div class="heading">
-                <h3>Book an Appointment</h3>
+                <h3>Login</h3>
             </div>
             <div class="formcontainer">
-                <form class="appointmentform">
-
-                    <label>Select Appointment Date*</label>
-                    <input type="date" class="grey">
-                    
-                    <label>Time Interval*</label>
-                    <div class="radio_container">
-                        <div class="radio"><input type="radio" name="Time Interval" value="Morning"><label>Morning</label></div>
-                        <div class="radio"><input type="radio" name="Time Interval" value="Afternoon"><label>Afternoon</label></div>
-                        <div class="radio"><input type="radio" name="Time Interval" value="Evening"><label>Evening</label></div>
+                <form class="loginform">
+                    <div class="mobileno_input">
+                        <input type="tel" placeholder="Enter Mobile Number">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>
                     </div>
-                    
-                    <label>Appointment Status / Urgency*</label>
-                    <div class="radio_container">
-                        <div class="radio"><input type="radio" name="Appointment Status" value="Routine"><label>Routine Check-up</label></div>
-                        <div class="radio"><input type="radio" name="Appointment Status" value="Non-urgent"><label>Non-urgent Check-up</label></div>
-                        <div class="radio"><input type="radio" name="Appointment Status" value="Urgent"><label>Urgent Check-up</label></div>
-                        <div class="radio"><input type="radio" name="Appointment Status" value="Surgical"><label>Surgical Check-up</label></div>
-                    </div>
-                    
-                    <label>Upload Previous Health Record</label>
-                    <div class="button_container"><button>Choose File</button><span>No File Choosen</span></div>
-
-                    <label>Appointment Details</label>
-                    <textarea></textarea>
-
-                    <button class="primarybutton">BOOK APPOINTMENT</button>
-
+                    <input type="password" placeholder="Enter OTP">
+                    <button class="primarybutton">LOGIN</button>
                 </form>
             </div>
+            <h6>Not Registered? <a href="signup.html">Sign Up</a></h6>
         </section>
     </main>
     <footer>
